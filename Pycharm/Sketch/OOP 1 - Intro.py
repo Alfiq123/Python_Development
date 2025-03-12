@@ -1,3 +1,9 @@
+#  ___       _                 _            _    _
+# |_ _| _ _ | |_  _ _  ___  __| | _  _  __ | |_ (_) ___  _ _
+#  | | | ' \|  _|| '_|/ _ \/ _` || || |/ _||  _|| |/ _ \| ' \
+# |___||_||_|\__||_|  \___/\__,_| \_,_|\__| \__||_|\___/|_||_|
+#
+
 # Object.
 class Car:
 
@@ -8,6 +14,7 @@ class Car:
         self.color = color
         self.for_sale = for_sale
 
+    # Methods.
     def drive(self):
         print(f"You drive the {self.color} {self.model}!")
 
@@ -17,6 +24,7 @@ class Car:
     def describe(self):
         print(f"{self.year} {self.color} {self.model}")
 
+# Accessing the class.
 car_1 = Car("Tesla", 2000, "Green", False)
 car_2 = Car("Ferrari", 1998, "Blue", True)
 car_3 = Car("Mustang", 1996, "Red", False)
