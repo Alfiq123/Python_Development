@@ -1,5 +1,4 @@
 Light Themes (Bootstrap Styles)
-  • cerulean
   • cosmo
   • flatly
   • journal

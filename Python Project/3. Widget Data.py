@@ -1,7 +1,7 @@
 import tkinter as tk
 import ttkbootstrap as ttk
 
-app = tk.Tk()
+app = ttk.Window(themename = "darkly")
 app.title("Widget Data")
 app.geometry("300x200")
 app.resizable(width = False, height = False)
@@ -22,7 +22,7 @@ def buttonfunc():
 
 # Label.
 label = ttk.Label(master = app, text = "The Text")
-label.pack()
+label.pack(pady = 10)
 
 # Entry.
 entry = ttk.Entry(master = app)

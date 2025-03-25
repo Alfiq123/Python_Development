@@ -21,7 +21,7 @@ label.pack(pady = 10)
 
 # Ttk Text
 text = ttkb.Text(master = app)
-text.pack(fill = "both", pady= 10)
+text.pack(fill = "both", pady= 10, padx= 10)
 
 # Frame to hold Entry and Button
 button_frame = ttkb.Frame(master = app)
