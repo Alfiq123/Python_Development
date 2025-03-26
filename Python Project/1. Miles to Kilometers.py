@@ -37,7 +37,7 @@ output_label = ttk.Label(master = app, text = "Output", font= ("Times New Roman"
 output_label.pack(pady = 5)
 
 # Window Icon
-app_icon = tk.PhotoImage(file="Python Project/Icon_Python.png")
+app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Icon_Python.png")
 app.iconphoto(True, app_icon)
 
 # Run
