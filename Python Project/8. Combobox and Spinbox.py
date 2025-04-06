@@ -43,6 +43,9 @@ exc_spin.pack(padx = 10, pady = 10)
 exc_spin.bind("<<Decrement>>", lambda event: print(exc_string.get()))
 
 
-app_icon = tk.PhotoImage(file = "Python Project/Icon_Python.png")
+# Window Icon
+app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Icon_Python.png")
 app.iconphoto(True, app_icon)
+
+# Run
 app.mainloop()

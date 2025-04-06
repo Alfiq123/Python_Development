@@ -6,7 +6,6 @@ app.title("Even Binding")
 app.resizable(width = False, height = False)
 
 
-
 def get_position(event):
     print(f"x: {event.x} y: {event.y}")
 
@@ -41,7 +40,9 @@ entry.bind("<FocusOut>", lambda event: print(f"Entry was unselected!"))
 text.bind("<Shift-MouseWheel>", lambda event: print("MouseWheel"))
 
 
-
-app_icon = tk.PhotoImage(file = "Python Project/Icon_Python.png")
+# Window Icon
+app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Icon_Python.png")
 app.iconphoto(True, app_icon)
+
+# Run
 app.mainloop()

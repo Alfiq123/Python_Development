@@ -41,8 +41,8 @@ def buttonfunc2():
 button_2 = ttk.Button(master = app, text = "Enabled", command = buttonfunc2)
 button_2.pack(pady = 10)
 
-# Window Icon.
-app_icon = tk.PhotoImage(file = "Python Project/Icon_Python.png")
+# Window Icon
+app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Icon_Python.png")
 app.iconphoto(True, app_icon)
 
 # Run

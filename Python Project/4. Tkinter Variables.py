@@ -7,9 +7,6 @@ app.title("Widget Data")
 app.resizable(width = False, height = False)
 
 
-
-
-
 def buttonfunc():
     print(string_var.get())
     
@@ -48,9 +45,9 @@ exercise_label = ttk.Label(master = app, textvariable = exercise_var)
 exercise_label.pack(pady = 10, padx = 10)
 
 
-
-
-
-app_icon = tk.PhotoImage(file = "Python Project/Icon_Python.png")
+# Window Icon
+app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Icon_Python.png")
 app.iconphoto(True, app_icon)
+
+# Run
 app.mainloop()

@@ -47,7 +47,9 @@ table.bind("<<TreeviewSelect>>", item_selected)
 table.bind("<Delete>", delete_item)
 
 
-# Icon.
-app_icon = tk.PhotoImage(file = "Python Project/Icon_Python.png")
+# Window Icon
+app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Icon_Python.png")
 app.iconphoto(True, app_icon)
+
+# Run
 app.mainloop()

@@ -6,7 +6,6 @@ app.title("Buttons Arguments")
 app.resizable(width = False, height = False)
 
 
-
 def button_func(entry_string):
     print(f"Button Pressed!")
     print(entry_string.get())
@@ -28,7 +27,9 @@ button = ttk.Button(master = app, text = "Return", command = button_func(entry_s
 button.pack(padx = 10, pady = 10)
 
 
-
-app_icon = tk.PhotoImage(file = "Python Project/Icon_Python.png")
+# Window Icon
+app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Icon_Python.png")
 app.iconphoto(True, app_icon)
+
+# Run
 app.mainloop()

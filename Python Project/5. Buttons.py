@@ -6,7 +6,6 @@ app.title("Buttons")
 app.resizable(width = False, height = False)
 
 
-
 # Application.
 
 # Button Function.
@@ -56,8 +55,9 @@ exercise_check = ttk.Checkbutton(master = app, text = "Check AB", variable = exe
 exercise_check.pack(pady = 10)
 
 
-
-
-app_icon = tk.PhotoImage(file = "Python Project/Icon_Python.png")
+# Window Icon
+app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Icon_Python.png")
 app.iconphoto(True, app_icon)
+
+# Run
 app.mainloop()
