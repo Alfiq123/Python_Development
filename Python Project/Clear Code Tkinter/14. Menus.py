@@ -81,7 +81,7 @@ exercise_submenu.add_checkbutton(label = "Exercise Sub Menu Check Button 3")
 
 
 # App Icon
-app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Icon_Python.png")
+app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Assets/Icon_Python.png")
 app.iconphoto(True, app_icon)
 
 # App Loop

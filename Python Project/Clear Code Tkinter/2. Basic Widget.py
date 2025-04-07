@@ -48,7 +48,7 @@ exercise_button = ttk.Button(master = app, text = "Button 2", command = lambda: 
 exercise_button.pack(pady = 10)
 
 # Window Icon
-app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Icon_Python.png")
+app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Assets/Icon_Python.png")
 app.iconphoto(True, app_icon)
 
 # Loop the Program

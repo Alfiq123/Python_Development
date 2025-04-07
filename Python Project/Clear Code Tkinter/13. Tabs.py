@@ -49,7 +49,7 @@ notebook.pack(padx = 10, pady = 10)
 
 
 # Window Icon
-app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Icon_Python.png")
+app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Assets/Icon_Python.png")
 app.iconphoto(True, app_icon)
 
 # Loop
