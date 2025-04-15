@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom animations */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
+        @keyframes shake {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(5deg);
+            }
+            75% {
+                transform: rotate(-5deg);
+            }
+        }
+        
+        .btn-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .btn-pulse {
+            animation: pulse 2s ease infinite;
+        }
+        
+        .btn-shake:hover {
+            animation: shake 0.5s ease;
+        }
+        
+        .btn-gradient {
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899);
+            background-size: 300% 300%;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-gradient:hover {
+            background-position: 100% 50%;
+            transform: translateY(-3px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .btn-3d {
+            position: relative;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-3d:hover {
+            transform: translateY(5px);
+            box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-border-anim {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-border-anim::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(90deg, transparent, #fff, transparent);
+            transform: scaleX(0);
+            transition: transform 0.5s ease;
+        }
+        
+        .btn-border-anim:hover::before {
+            transform: scaleX(1);
+        }
+        
+        /* Particle effect */
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .particle {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800 min-h-screen text-white">
+    <div class="particles" id="particles"></div>
+    
+    <div class="container mx-auto px-4 py-16 relative z-10">
+        <header class="flex justify-between items-center mb-20">
+            <div class="text-2xl font-bold flex items-center">
+                <i class="fas fa-magic mr-2 text-pink-400"></i>
+                MagicUI
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="hover:text-pink-300 transition">Home</a>
+                <a href="#" class="hover:text-pink-300 transition">Features</a>
+                <a href="#" class="hover:text-pink-300 transition">Pricing</a>
+                <a href="#" class="hover:text-pink-300 transition">Contact</a>
+            </nav>
+            <button class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+
+        <main class="flex flex-col items-center text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-indigo-300">
+                    Animated Buttons
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl max-w-2xl mb-12 opacity-90">
+                Explore our collection of beautifully animated buttons that will make your website stand out.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-4xl">
+                <!-- Floating Button -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 flex flex-col items-center">
+                    <h3 class="text-xl font-semibold mb-4">Floating Effect</h3>
+                    <button class="btn-float px-8 py-3 rounded-full bg-pink-500 text-white font-medium">
+                        Hover Me
+                    </button>
+                </div>
+
+                <!-- Pulse Button -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 flex flex-col items-center">
+                    <h3 class="text-xl font-semibold mb-4">Pulse Effect</h3>
+                    <button class="btn-pulse px-8 py-3 rounded-full bg-indigo-500 text-white font-medium">
+                        Click Me
+                    </button>
+                </div>
+
+                <!-- Shake Button -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 flex flex-col items-center">
+                    <h3 class="text-xl font-semibold mb-4">Shake Effect</h3>
+                    <button class="btn-shake px-8 py-3 rounded-full bg-purple-500 text-white font-medium">
+                        Try Me
+                    </button>
+                </div>
+
+                <!-- Gradient Button -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 flex flex-col items-center">
+                    <h3 class="text-xl font-semibold mb-4">Gradient Effect</h3>
+                    <button class="btn-gradient px-8 py-3 rounded-full text-white font-medium">
+                        Explore
+                    </button>
+                </div>
+
+                <!-- 3D Button -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 flex flex-col items-center">
+                    <h3 class="text-xl font-semibold mb-4">3D Effect</h3>
+                    <button class="btn-3d px-8 py-3 rounded-full bg-indigo-600 text-white font-medium">
+                        Press Me
+                    </button>
+                </div>
+
+                <!-- Border Animation Button -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 flex flex-col items-center">
+                    <h3 class="text-xl font-semibold mb-4">Border Effect</h3>
+                    <button class="btn-border-anim px-8 py-3 rounded-full bg-transparent border-2 border-white text-white font-medium">
+                        Discover
+                    </button>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="mt-16">
+                <button class="relative overflow-hidden group px-12 py-4 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300">
+                    <span class="relative z-10">Get Started Now</span>
+                    <span class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    <span class="absolute -inset-2 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 group-hover:inset-0 transition-all duration-300"></span>
+                </button>
+            </div>
+        </main>
+
+        <footer class="mt-32 text-center text-sm opacity-70">
+            <p>© 2023 MagicUI. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Particle effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 30;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random size between 2px and 5px
+                const size = Math.random() * 3 + 2;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // Random animation
+                const duration = Math.random() * 10 + 5;
+                const delay = Math.random() * 5;
+                particle.style.animation = `float ${duration}s ease-in-out ${delay}s infinite`;
+                
+                particlesContainer.appendChild(particle);
+                
+                // Fade in
+                setTimeout(() => {
+                    particle.style.opacity = '0.5';
+                }, delay * 1000);
+            }
+            
+            // Button click effects
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    // Ripple effect
+                    const ripple = document.createElement('span');
+                    ripple.classList.add('absolute', 'bg-white', 'rounded-full', 'animate-ripple');
+                    
+                    const rect = button.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size/2;
+                    const y = e.clientY - rect.top - size/2;
+                    
+                    ripple.style.width = ripple.style.height = `${size}px`;
+                    ripple.style.left = `${x}px`;
+                    ripple.style.top = `${y}px`;
+                    
+                    button.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 1000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

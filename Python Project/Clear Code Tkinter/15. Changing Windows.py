@@ -22,11 +22,11 @@ entry = ctk.CTkEntry(master = app, placeholder_text = "Name...", font = ("Seoge 
 entry.pack(pady = 10, padx = 10)
 
 # * Button
-button = ctk.CTkButton(master = app, text = "Send", font = ("Seoge UI", 12))
+button = ctk.CTkButton(master = app, text = "Proceed", font = ("Seoge UI", 12))
 button.pack(pady = 10, padx = 10)
 
 # * Checkbutton
-check = ctk.CTkCheckBox(master = app, text = "Avilable")
+check = ctk.CTkCheckBox(master = app, text = "Remember Me")
 check.pack(pady = 10, padx = 10)
 
 # * Window Attribute
@@ -51,14 +51,24 @@ app.bind("<Escape>", lambda event: app.destroy())
 
 
 # TODO: Start window in the middle of the screen
-app_width = 512
-app_height = 512
+# app_width = 512
+# app_height = 512
 
+# NOTE: Alternative
+app.update_idletasks()
+
+app_width = app.winfo_width()
+app_height = app.winfo_height()
+
+# Get screen width and height
 display_width = app.winfo_screenwidth()
 display_height = app.winfo_screenheight()
 
 left = (display_width / 2) - (app_width / 2)
 top = (display_height / 2) - (app_height / 2)
+
+# left = (display_width // 2) - (app_width // 2)
+# top = (display_height // 2) - (app_height // 2)
 
 app.geometry(f"{app_width}x{app_height}+{int(left)}+{int(top)}")
 
