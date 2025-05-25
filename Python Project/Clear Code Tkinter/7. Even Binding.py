@@ -1,6 +1,8 @@
 import tkinter as tk
 import ttkbootstrap as ttk
 
+from os import path
+
 app = ttk.Window(themename = "cosmo")
 app.title("Even Binding")
 app.resizable(width = False, height = False)
@@ -10,7 +12,11 @@ def get_position(event):
     print(f"x: {event.x} y: {event.y}")
 
 # The Title.
-title = ttk.Label(master = app, text = "Even Binding", font = ("Times New Roman", 14, "bold"))
+title = ttk.Label(
+    master = app,
+    text = "Even Binding",
+    font = ("Times New Roman", 14, "bold")
+)
 title.pack(padx = 10, pady = 10)
 
 # Text.
@@ -29,8 +35,11 @@ button.pack(padx = 10, pady = 10)
 # button.bind("<Alt-KeyPress-a>", lambda event: print("Eventers!"))
 # app.bind("<Motion>", get_position)
 # text.bind("<Motion>", get_position)
-
-# app.bind("<KeyPress>", lambda event: print(f"Button was pressed! ({event.char})"))
+#
+# app.bind(
+#     "<KeyPress>",
+#     lambda event: print(f"Button was pressed! ({event.char})")
+# )
 
 # Selecting Stuff.
 entry.bind("<FocusIn>", lambda event: print(f"Entry was selected!"))
@@ -41,7 +50,8 @@ text.bind("<Shift-MouseWheel>", lambda event: print("MouseWheel"))
 
 
 # Window Icon
-app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Assets/Icon_Python.png")
+app_icon_path = path.join(path.dirname(__file__),"Assets", "Icon_Python.png")
+app_icon = tk.PhotoImage(file=app_icon_path)
 app.iconphoto(True, app_icon)
 
 # Run

@@ -1,6 +1,5 @@
-import time
-
 from random import randint
+from time import sleep
 from turtle import Turtle, Screen
 
 
@@ -13,7 +12,7 @@ MOVE_DISTANCE = 20
 # ! Define heading constants for clarity - Geimini
 UP, DOWN, LEFT, RIGHT = 90, 270, 180, 0
 
-# TODO 3: Create The Snake Class.
+
 class Snake:
 
     def __init__(self):
@@ -34,7 +33,6 @@ class Snake:
             # segment.goto(position)  # Posisi awal setiap segmen
             # self.snake_body.append(segment)
 
-
     # ══════════ Extending the Snake ══════════ #
 
     def add_segment(self, position):
@@ -48,7 +46,6 @@ class Snake:
 
     def extend(self):
         self.add_segment(self.snake_body[-1].position())
-
 
     def move(self):
         for part in range(len(self.snake_body) - 1, 0, -1):
@@ -86,21 +83,20 @@ class Snake:
 # ⫘⫘⫘⫘⫘⫘ The Foods ⫘⫘⫘⫘⫘⫘ #
 
 
-# TODO: Detect collision with food.
 class Food(Turtle):
 
     def __init__(self):
         super().__init__()
         self.shape("turtle")
         self.penup()
-        self.shapesize(stretch_len = 0.5, stretch_wid = 0.5)
+        self.shapesize(stretch_len=0.5, stretch_wid=0.5)
         self.color("green")
         self.speed("fastest")
         self.change_position()
 
     def change_position(self):
-        random_x = randint(a = -280, b = 280)
-        random_y = randint(a = -280, b = 280)
+        random_x = randint(a=-280, b=280)
+        random_y = randint(a=-280, b=280)
         self.goto(random_x, random_y)
 
 
@@ -116,16 +112,23 @@ class Scoreboard(Turtle):
         self.hideturtle()
         self.speed("fastest")
         self.color("white")
-        self.goto(x = 0, y = 260)
+        self.goto(x=0, y=260)
         self.update_score()
 
     def update_score(self):
-        self.write(arg = f"Score: {self.score}", move = False, align = "center", font = ("Courier", 24, "normal"))
+        self.write(
+            arg=f"Score: {self.score}",
+            move=False, align="center",
+            font=("Courier", 24, "normal"))
 
     def game_over(self):
         self.color("red")
-        self.goto(x = 0, y = 0)
-        self.write(arg = f"GAME OVER", move = False, align = "center", font = ("Courier", 24, "normal"))
+        self.goto(x=0, y=0)
+        self.write(
+            arg="GAME OVER",
+            move=False,
+            align="center",
+            font=("Courier", 24, "normal"))
 
     def add_score(self):
         self.score += 1
@@ -137,7 +140,7 @@ class Scoreboard(Turtle):
 
 
 screen = Screen()
-screen.setup(width = 600, height = 600)
+screen.setup(width=600, height=600)
 screen.bgcolor("black")
 screen.title("Udemy Snake Game")
 screen.tracer(False)
@@ -154,7 +157,7 @@ screen.onkey(snake.right, 'Right')
 
 while True:
     screen.update()
-    time.sleep(0.05)
+    sleep(0.1)
     snake.move()
 
     # ══════════ Detect collision with food ══════════ #
@@ -166,17 +169,21 @@ while True:
 
     # ══════════ Detect collision with wall ══════════ #
 
-    elif snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
-        print("Fuck You! - You Dead")
+    elif (
+        snake.head.xcor() > 280 or
+        snake.head.xcor() < -280 or
+        snake.head.ycor() > 280 or
+        snake.head.ycor() < -280
+    ):
+        print("Error! - You Dead")
         score.game_over()
-        quit()
         break
 
     # ══════════ Detect collision with tail ══════════ #
 
     for segment in snake.snake_body[1:]:
         # if segment == snake.head:
-            # pass
+        #     pass
         if snake.head.distance(segment) < 10:
             score.game_over()
             quit()
