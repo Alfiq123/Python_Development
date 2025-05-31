@@ -53,10 +53,11 @@ def calculator(num_1, operator, num_2):
         return num_1 * num_2
     elif operator == "/":
         return num_1 / num_2
-    
+    return None
+
 
 def discount(price, disc):
-    return (price - (price * (disc / 100)))
+    return price - (price * (disc / 100))
 
 
 def just_integers(lst):
