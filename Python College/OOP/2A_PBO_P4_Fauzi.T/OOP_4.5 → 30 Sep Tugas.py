@@ -10,37 +10,41 @@
 #   yang berbeda-beda.
 
 class Tiket:
-    def __init__(self):
-        pass
+    def __init__(self, harga):
+        self.harga = harga
 
-    def metode_tiket(self):
-        pass
+    def hitung_total(self, jumlah):
+        return self.harga * jumlah
 
 
+# Tiket Biasa → Rp. 30.000
 class TiketBiasa(Tiket):
     def __init__(self):
-        super().__init__()
-
-    def metode_tiket_biasa(self):
-        pass
+        super().__init__(harga=30000)
 
 
+# Tiket VIP → Rp. 50.000
 class TiketVIP(Tiket):
     def __init__(self):
-        super().__init__()
-
-    def metode_tiket_vip(self):
-        pass
+        super().__init__(harga=50000)
 
 
+# Tiket Gold → Rp. 70.000
 class TiketGold(Tiket):
     def __init__(self):
-        super().__init__()
-
-    def metode_tiket_gold(self):
-        pass
+        super().__init__(harga=70000)
 
 
 if __name__ == "__main__":
-    tanya_jenis = str(input("Masukkan jenis tiket (Biasa/Vip/Gold): "))
+    tanya_jenis = input(
+        "Masukkan jenis tiket (Biasa/Vip/Gold): "
+    ).lower()
     tanya_jumlah = int(input("Masukkan jumlah tiket: "))
+
+    if tanya_jenis == "biasa": tiket = TiketBiasa()
+    elif tanya_jenis == "vip": tiket = TiketVIP()
+    elif tanya_jenis == "gold": tiket = TiketGold()
+    else: print("Jenis tiket tidak valid."); exit()
+
+    total = tiket.hitung_total(tanya_jumlah)
+    print(f"Total Harga Tiket : Rp {total:,}")
