@@ -6,24 +6,38 @@
 
 class ProdukTernak:
     def __init__(self): pass
-
     def proses_panen(self):
-        pass
+        raise NotImplementedError("Metode ini harus di-override di subclass.")
 
 
 class DagingSapi(ProdukTernak):
     def __init__(self): super().__init__()
-
     def proses_panen(self):
-        pass
+        print(
+            "  1. Memeriksa kesehatan sapi sebelum pemotongan.\n"
+            "  2. Melakukan pemotongan sesuai prosedur.\n"
+            "  3. Membersihkan dan memisahkan bagian daging.\n"
+            "  4. Mengemas daging untuk distribusi.\n"
+        )
 
 
 class TelurAyam(ProdukTernak):
     def __init__(self): super().__init__()
-
     def proses_panen(self):
-        pass
+        print(
+            "  1. Mengumpulkan telur dari kandang ayam.\n"
+            "  2. Membersihkan telur dari kotoran.\n"
+            "  3. Menyortir berdasarkan ukuran dan kualitas.\n"
+            "  4. Mengemas telur ke dalam wadah karton.\n"
+        )
 
 
 if __name__ == "__main__":
-    pass
+    ayam = TelurAyam()
+    sapi = DagingSapi()
+
+    print("═════ Proses Panen Daging Sapi ═════")
+    sapi.proses_panen()
+
+    print("═════ Proses Panen Telur Ayam ═════")
+    ayam.proses_panen()
