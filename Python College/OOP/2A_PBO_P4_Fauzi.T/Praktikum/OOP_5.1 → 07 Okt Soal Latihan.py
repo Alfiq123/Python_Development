@@ -13,28 +13,27 @@
 
 class HewanPeliharaan:
     def __init__(self): pass
-
     def hitung_pakan_harian(self, berat, persen):
-        return berat * persen
+        return (berat * 1000) * persen
 
 
 class Kucing(HewanPeliharaan):
     def __init__(self): super().__init__()
-
     def hitung_pakan_harian(self, berat=4, persen=0.02):
         return (
             f"Kucing dengan berat: {berat:,} kg, "
-            f"Membutuhkan pakan seberat: {(berat * 1000) * persen:,.2f} gram"
+            f"Membutuhkan pakan sebanyak: "
+            f"{(berat * 1000) * persen:,.2f} gram"
         )
 
 
 class Anjing(HewanPeliharaan):
     def __init__(self): super().__init__()
-
     def hitung_pakan_harian(self, berat=15, persen=0.03):
         return (
             f"Anjing dengan berat: {berat:,} kg, "
-            f"Membutuhkan pakan seberat: {(berat * 1000) * persen:,.2f} gram"
+            f"Membutuhkan pakan sebanyak: "
+            f"{(berat * 1000) * persen:,.2f} gram"
         )
 
 

@@ -34,8 +34,8 @@ class TransportasiUdara(Pengiriman):
 
 
 if __name__ == "__main__":
-    tpDarat = [TransportasiDarat() for _ in range(6)]
-    tpudara = [TransportasiUdara() for _ in range(6)]
+    tpDarat = [TransportasiDarat() for _ in range(3)]
+    tpudara = [TransportasiUdara() for _ in range(3)]
 
     print(
         # Tugas
@@ -47,13 +47,4 @@ if __name__ == "__main__":
         "\n"
         f"{tpDarat[2].hitung_biaya_transport(km=30)}\n"
         f"{tpudara[2].hitung_biaya_transport(km=221)}\n"
-        "\n"
-        f"{tpDarat[3].hitung_biaya_transport(km=631)}\n"
-        f"{tpudara[3].hitung_biaya_transport(km=941)}\n"
-        "\n"
-        f"{tpDarat[4].hitung_biaya_transport(km=431)}\n"
-        f"{tpudara[4].hitung_biaya_transport(km=748)}\n"
-        "\n"
-        f"{tpDarat[5].hitung_biaya_transport(km=139)}\n"
-        f"{tpudara[5].hitung_biaya_transport(km=776)}\n"
     )

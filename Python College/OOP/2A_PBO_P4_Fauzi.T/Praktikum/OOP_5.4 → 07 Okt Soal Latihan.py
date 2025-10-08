@@ -6,8 +6,7 @@
 
 class ProdukTernak:
     def __init__(self): pass
-    def proses_panen(self):
-        raise NotImplementedError("Metode ini harus di-override di subclass.")
+    def proses_panen(self): pass
 
 
 class DagingSapi(ProdukTernak):

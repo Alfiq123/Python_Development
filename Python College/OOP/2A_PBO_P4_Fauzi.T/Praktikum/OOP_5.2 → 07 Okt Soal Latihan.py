@@ -12,16 +12,13 @@
 
 class TernakSehat:
     def __init__(self): pass
-
     def cek_kesehatan(self, *args): pass
 
 
 class SapiPerah(TernakSehat):
-    def __init__(self):
-        super().__init__()
-
+    def __init__(self): super().__init__()
     def cek_kesehatan(self, liter):
-        if liter <= 21:
+        if liter <= 20:
             return (
                 f"Sapi menghasilkan susu {liter} / hari, "
                 f"Status Sapi: Tidak Sehat"
@@ -34,9 +31,7 @@ class SapiPerah(TernakSehat):
 
 
 class AyamPetelur(TernakSehat):
-    def __init__(self):
-        super().__init__()
-
+    def __init__(self): super().__init__()
     def cek_kesehatan(self, butir):
         if butir <= 0:
             return (
