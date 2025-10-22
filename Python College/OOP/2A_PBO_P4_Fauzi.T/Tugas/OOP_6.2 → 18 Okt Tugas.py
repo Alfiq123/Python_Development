@@ -103,39 +103,71 @@ class Pakan:
 if __name__ == "__main__":
     # Pakan Sapi
     pakan_sapi = Pakan("Sapi Premium")
-    pakan_sapi.tambah_komposisi(KomposisiPakan(jenis="Serat",
-                                               persentase=60))
-    pakan_sapi.tambah_komposisi(KomposisiPakan(jenis="Protein",
-                                               persentase=30))
-    pakan_sapi.tambah_komposisi(KomposisiPakan(jenis="Mineral",
-                                               persentase=10))
+    pakan_sapi.tambah_komposisi(
+        KomposisiPakan(
+            jenis="Serat",
+            persentase=60
+        )
+    )
+    pakan_sapi.tambah_komposisi(
+        KomposisiPakan(
+            jenis="Protein",
+            persentase=30
+        )
+    )
+    pakan_sapi.tambah_komposisi(
+        KomposisiPakan(
+            jenis="Mineral",
+            persentase=10
+        )
+    )
     pakan_sapi.tampilkan_komposisi()
 
     # Pakan Kambing
     pakan_kambing = Pakan("Kambing Golden")
-    pakan_kambing.tambah_komposisi(KomposisiPakan(jenis="Serat",
-                                                  persentase=50))
-    pakan_kambing.tambah_komposisi(KomposisiPakan(jenis="Protein",
-                                                  persentase=25))
-    pakan_kambing.tambah_komposisi(KomposisiPakan(jenis="Mineral",
-                                                  persentase=25))
+    pakan_kambing.tambah_komposisi(
+        KomposisiPakan(
+            jenis="Serat",
+            persentase=50
+        )
+    )
+    pakan_kambing.tambah_komposisi(
+        KomposisiPakan(
+            jenis="Protein",
+            persentase=25
+        )
+    )
+    pakan_kambing.tambah_komposisi(
+        KomposisiPakan(
+            jenis="Mineral",
+            persentase=25
+        )
+    )
     pakan_kambing.tampilkan_komposisi()
 
     # Peternakan 1
     peternakan_1 = Peternakan(nama="Chain Reaction")
 
-    sapi_1_1 = Sapi(nama="Zephyr",
-                    berat_badan=1847,
-                    pakan=pakan_sapi)
-    sapi_1_2 = Sapi(nama="Optical",
-                    berat_badan=1714,
-                    pakan=pakan_sapi)
-    kambing_1_1 = Kambing(nama="Izuaf",
-                          berat_badan=128,
-                          pakan=pakan_kambing)
-    kambing_1_2 = Kambing(nama="Canary",
-                          berat_badan=77,
-                          pakan=pakan_kambing)
+    sapi_1_1 = Sapi(
+        nama="Zephyr",
+        berat_badan=1847,
+        pakan=pakan_sapi
+    )
+    sapi_1_2 = Sapi(
+        nama="Optical",
+        berat_badan=1714,
+        pakan=pakan_sapi
+    )
+    kambing_1_1 = Kambing(
+        nama="Izuaf",
+        berat_badan=128,
+        pakan=pakan_kambing
+    )
+    kambing_1_2 = Kambing(
+        nama="Canary",
+        berat_badan=77,
+        pakan=pakan_kambing
+    )
 
     peternakan_1.tambah_hewan(hewan=sapi_1_1)
     peternakan_1.tambah_hewan(hewan=sapi_1_2)
@@ -147,18 +179,26 @@ if __name__ == "__main__":
     # Peternakan 2
     peternakan_2 = Peternakan(nama="Apa Saja Bisa")
 
-    sapi_2_1 = Sapi(nama="Ankita",
-                    berat_badan=1393,
-                    pakan=pakan_sapi)
-    sapi_2_2 = Sapi(nama="Michail",
-                    berat_badan=1558,
-                    pakan=pakan_sapi)
-    kambing_2_1 = Kambing(nama="Ivailo",
-                          berat_badan=40,
-                          pakan=pakan_kambing)
-    kambing_2_2 = Kambing(nama="Giovanni",
-                          berat_badan=57,
-                          pakan=pakan_kambing)
+    sapi_2_1 = Sapi(
+        nama="Ankita",
+        berat_badan=1393,
+        pakan=pakan_sapi
+    )
+    sapi_2_2 = Sapi(
+        nama="Michail",
+        berat_badan=1558,
+        pakan=pakan_sapi
+    )
+    kambing_2_1 = Kambing(
+        nama="Ivailo",
+        berat_badan=40,
+        pakan=pakan_kambing
+    )
+    kambing_2_2 = Kambing(
+        nama="Giovanni",
+        berat_badan=57,
+        pakan=pakan_kambing
+    )
 
     peternakan_2.tambah_hewan(hewan=sapi_2_1)
     peternakan_2.tambah_hewan(hewan=sapi_2_2)

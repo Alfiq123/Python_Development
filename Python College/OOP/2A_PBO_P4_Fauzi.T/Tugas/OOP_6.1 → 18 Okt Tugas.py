@@ -47,13 +47,17 @@ class KebunKering(Lahan):
 
 
 if __name__ == "__main__":
-    sawah_1 = Sawah(luashektar=16,
-                    lokasi="Desa SukaMundur",
-                    jenis_irigasi="Otomatis")
+    sawah_1 = Sawah(
+        luashektar=16,
+        lokasi="Desa SukaMundur",
+        jenis_irigasi="Otomatis"
+    )
 
-    sawah_2 = Sawah(luashektar=24,
-                    lokasi="Desa TaniJaya",
-                    jenis_irigasi="Manual")
+    sawah_2 = Sawah(
+        luashektar=24,
+        lokasi="Desa TaniJaya",
+        jenis_irigasi="Manual"
+    )
 
     print(f"{sawah_1.tanam()}\n"
           f"{sawah_1.panen()}\n")
@@ -61,11 +65,15 @@ if __name__ == "__main__":
     print(f"{sawah_2.tanam()}\n"
           f"{sawah_2.panen()}\n")
 
-    kebun_kering_1 = KebunKering(luashektar=32,
-                                 lokasi="Desa MajuJaya")
+    kebun_kering_1 = KebunKering(
+        luashektar=32,
+        lokasi="Desa MajuJaya"
+    )
 
-    kebun_kering_2 = KebunKering(luashektar=48,
-                                 lokasi="Desa MundurMundur")
+    kebun_kering_2 = KebunKering(
+        luashektar=48,
+        lokasi="Desa MundurMundur"
+    )
 
     print(f"{kebun_kering_1.tanam()}\n"
           f"{kebun_kering_1.panen()}\n")
