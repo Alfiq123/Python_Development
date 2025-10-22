@@ -239,8 +239,8 @@ class DogB:  # ? 🡠 Parent Class
 
 # ! Changed
 # class JackRussellTerrier(DogB):  # ? 🡠 Child Class
-    # def speak(self, sound="Arf"):  # ? 🡠 Default Argument
-        # return f"{self.name} says {sound}"
+# def speak(self, sound="Arf"):  # ? 🡠 Default Argument
+# return f"{self.name} says {sound}"
 
 
 # * Menggunakan `super()` untuk memanggil metode dari `class` induk.
@@ -297,7 +297,7 @@ class DogC:
 
     def speak(self, sound):
         return f"{self.name} says {sound}"
-    
+
 
 class GoldenRetriever(DogC):
     def speak(self, sound="Bark"):
