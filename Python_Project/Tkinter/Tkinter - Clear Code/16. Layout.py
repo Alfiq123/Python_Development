@@ -51,7 +51,7 @@ label2.place(relx = 0.5, rely = 0.5, relwidth = 0.5, relheight = 0.5, anchor = "
 
 
 # App Icon
-app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Assets/Icon_Python.png")
+app_icon = tk.PhotoImage(file="Python_Intermediate/Python_Project/Assets/Icon_Python.png")
 app.iconphoto(True, app_icon)
 
 # Run

@@ -263,7 +263,7 @@ window.title("My Tkinter")
 
 # 💾 | 13. Filedialog Save
 # def filedialog_savefile():
-    # fd_save_file = tkinter.filedialog.asksaveasfile(initialdir="/home/inferno/Documents/Github Repository/Latihan-Algoritma/Python Project", defaultextension=".txt", filetypes=[("Text File", ".txt"), ("HTML FIle", ".html"),("All Files", ".*")])
+    # fd_save_file = tkinter.filedialog.asksaveasfile(initialdir="/home/inferno/Documents/Github Repository/Latihan-Algoritma/Python_Project", defaultextension=".txt", filetypes=[("Text File", ".txt"), ("HTML FIle", ".html"),("All Files", ".*")])
 
     # if fd_save_file == None:
         # return
@@ -282,7 +282,7 @@ window.title("My Tkinter")
 
 
 
-icon = tkinter.PhotoImage(file="/home/inferno/Documents/Github Repository/Latihan-Algoritma/Python Project/Icon_Python.png")
+icon = tkinter.PhotoImage(file="/home/inferno/Documents/Github Repository/Latihan-Algoritma/Python_Project/Icon_Python.png")
 window.iconphoto(True, icon)
 
 window.mainloop()

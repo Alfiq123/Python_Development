@@ -48,7 +48,7 @@ table.bind("<Delete>", delete_item)
 
 
 # Window Icon
-app_icon = tk.PhotoImage(file="Python_Intermediate/Python Project/Assets/Icon_Python.png")
+app_icon = tk.PhotoImage(file="Python_Intermediate/Python_Project/Assets/Icon_Python.png")
 app.iconphoto(True, app_icon)
 
 # Run

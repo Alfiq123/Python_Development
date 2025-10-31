@@ -18,7 +18,7 @@
 # canvas_points = [(250, 0), (500, 500), (0, 500)]
 # canvas.create_polygon(canvas_points, fill = "#DCA06D", outline = "#DCA06D", width = 5)
 
-# app_icon = tk.PhotoImage(file = "Python Project/Icon_Python.png")
+# app_icon = tk.PhotoImage(file = "Python_Project/Icon_Python.png")
 # app.iconphoto(True, app_icon)
 # app.mainloop()
 
@@ -111,7 +111,7 @@
 #     )
 
 #     # --- Run the App ---
-#     app_icon = tk.PhotoImage(file="Python Project/Icon_Python.png")
+#     app_icon = tk.PhotoImage(file="Python_Project/Icon_Python.png")
 #     app.iconphoto(True, app_icon)
 #     app.mainloop()
 

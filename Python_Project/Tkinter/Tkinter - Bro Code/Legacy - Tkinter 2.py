@@ -35,9 +35,9 @@ root.title("My Tkinter")
 # def menubar_paste():
     # print("Paste the text")
 
-# menubar_photo_open = tkinter.PhotoImage(file="Python Project/Icon_Open.png")
-# menubar_photo_save = tkinter.PhotoImage(file="Python Project/Icon_Save.png")
-# menubar_photo_exit = tkinter.PhotoImage(file="Python Project/Icon_Exit.png")
+# menubar_photo_open = tkinter.PhotoImage(file="Python_Project/Icon_Open.png")
+# menubar_photo_save = tkinter.PhotoImage(file="Python_Project/Icon_Save.png")
+# menubar_photo_exit = tkinter.PhotoImage(file="Python_Project/Icon_Exit.png")
 
 # menubar = tkinter.Menu(root)
 # root.config(menu=menubar)
@@ -268,7 +268,7 @@ root.title("My Tkinter")
 # root.bind("<Left>", move_left)
 # root.bind("<Right>", move_right)
 
-# mi_MyImage = tkinter.PhotoImage(file = "Python Project/Image_Sport-Car.png")
+# mi_MyImage = tkinter.PhotoImage(file = "Python_Project/Image_Sport-Car.png")
 # mi_Label = ttk.Label(master = root, image = mi_MyImage, background = "#E8E8E8")
 # mi_Label.place(x=0, y=0)
 
@@ -302,7 +302,7 @@ root.title("My Tkinter")
 # mi_canvas = tkinter.Canvas(master = root, width = 500, height = 500)
 # mi_canvas.pack()
 
-# mi_PhotoImage = tkinter.PhotoImage(file = "Python Project/Image_Sport-Car.png")
+# mi_PhotoImage = tkinter.PhotoImage(file = "Python_Project/Image_Sport-Car.png")
 # mi_MyImage2 = mi_canvas.create_image(0, 0, image = mi_PhotoImage, anchor = "nw")
 
 
@@ -319,10 +319,10 @@ root.title("My Tkinter")
 # a_Canvas = tkinter.Canvas(master = root, width = a_Width, height = a_Height)
 # a_Canvas.pack()
 
-# a_BackgroundPhoto = tkinter.PhotoImage(file = "Python Project/Image_Sky.png")
+# a_BackgroundPhoto = tkinter.PhotoImage(file = "Python_Project/Image_Sky.png")
 # a_a_Background = a_Canvas.create_image(0, 0, image = a_BackgroundPhoto, anchor = "nw")
 
-# a_PhotoImage = tkinter.PhotoImage(file = "Python Project/Image_Airplane.png")
+# a_PhotoImage = tkinter.PhotoImage(file = "Python_Project/Image_Airplane.png")
 # a_MyImage = a_Canvas.create_image(0, 0, image = a_PhotoImage, anchor = "nw")
 
 # a_ImageWidth = a_PhotoImage.width()
@@ -347,6 +347,6 @@ root.title("My Tkinter")
 
 
 
-root_icon = tkinter.PhotoImage(file="Python Project/Icon_Python.png")
+root_icon = tkinter.PhotoImage(file="Python_Project/Icon_Python.png")
 root.iconphoto(True, root_icon)
 root.mainloop()
