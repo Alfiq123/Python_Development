@@ -1,4 +1,4 @@
-from sys import argv
+from sys import argv, exit
 from PyQt5.QtCore import  QSize, Qt
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
 
@@ -22,4 +22,4 @@ if __name__ == "__main__":
     window = MainWindow()
     window.show()
 
-    app.exec()
+    exit(app.exec())
