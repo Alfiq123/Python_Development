@@ -150,17 +150,16 @@ class App:
             command=self.edit_data_cancel
         )
 
-        # ===== CARI UI (DIPERBARUI) ===== #
+        # ===== CARI UI ===== #
 
         ttk.Label(
             master=self.frame_cari,
             text="Cari Berdasarkan Nama:"
         ).grid(row=0, column=0, columnspan=3, sticky="w", padx=10)
-
         self.entry_cari = ttk.Entry(master=self.frame_cari, width=30)
         self.entry_cari.grid(row=1, column=0, padx=10, pady=10)
 
-        # Bind tombol Enter agar langsung mencari saat ditekan
+        # Bind tombol Enter
         self.entry_cari.bind(
             "<Return>", lambda event: self.lakukan_pencarian()
         )
@@ -189,12 +188,12 @@ class App:
         nama = self.entry_nama.get()
         alamat = self.entry_alamat.get()
         if nama or alamat:
-            # Menggunakan parameterized query agar lebih aman
             sql = """
                 INSERT INTO `Bio` (`nama`, `alamat`) 
                 VALUES (%s, %s)
             """
             val = (nama, alamat)
+
             self.dbcursor.execute(sql, val)
             messagebox.showinfo(
                 title="Informasi",
@@ -214,7 +213,7 @@ class App:
         self.btn_confirm.grid(row=1, column=0, padx=10, pady=10)
         self.btn_cancel.grid(row=1, column=2, padx=10, pady=10)
         self.frame_4.grid(row=0, column=1, padx=10, pady=10, sticky="w")
-        self._toggle_main_buttons("disabled")
+        self.toggle_tombol_utama("disabled")
 
     def edit_data_confirm(self):
         nama = self.entry_nama.get()
@@ -228,6 +227,7 @@ class App:
                 WHERE `nama` = %s
             """
             val = (n_nama, n_alamat, nama)
+
             self.dbcursor.execute(sql, val)
             messagebox.showinfo(
                 title="Informasi",
@@ -248,7 +248,7 @@ class App:
         self.btn_confirm.grid_forget()
         self.btn_cancel.grid_forget()
         self.frame_4.grid_forget()
-        self._toggle_main_buttons("enabled")
+        self.toggle_tombol_utama("enabled")
 
     def hapus_data(self):
         nama = self.entry_nama.get()
@@ -263,6 +263,7 @@ class App:
                     WHERE `nama` = %s
                 """
                 val = (nama,)
+
                 self.dbcursor.execute(sql, val)
                 messagebox.showinfo(
                     title="Informasi",
@@ -282,21 +283,17 @@ class App:
 
     # === FUNGSI CARI DATA ===
     def show_cari_ui(self):
-        """Menampilkan frame pencarian"""
         self.frame_cari.grid(row=3, column=0, padx=10, pady=10)
         self.entry_cari.focus()  # Langsung fokus ke kolom ketik
+        self.toggle_tombol_utama("disabled")
 
     def lakukan_pencarian(self):
-        """Melakukan query pencarian ke database"""
         keyword = self.entry_cari.get()
 
         # Bersihkan tabel saat ini
         for item in self.tabel.get_children():
             self.tabel.delete(item)
 
-        # Query dengan LIKE untuk pencarian
-        #   (Case Insensitive biasanya default di SQL)
-        # %keyword% berarti mencari teks yang mengandung keyword di mana saja
         sql = """
             SELECT `id`, `nama`, `alamat` 
             FROM `Bio` 
@@ -317,13 +314,14 @@ class App:
             )
 
     def tutup_cari(self):
-        """Menutup frame cari dan mereset tabel"""
-        self.entry_cari.delete(0, "end")
+        self.entry_cari.delete(first=0, last="end")
         self.frame_cari.grid_forget()
         self.refresh_data()  # Kembalikan semua data
+        self.toggle_tombol_utama("enabled")
 
     def refresh_data(self):
         self.dbcursor.execute("SELECT `id`, `nama`, `alamat` FROM `Bio`")
+
         for item in self.tabel.get_children():
             self.tabel.delete(item)
         for row in self.dbcursor.fetchall():
@@ -331,6 +329,7 @@ class App:
 
     def klik_tabel(self, event):
         baris = self.tabel.focus()
+
         if not baris: return
         data = self.tabel.item(item=baris)["values"]
         if not data: return
@@ -340,13 +339,12 @@ class App:
         self.entry_nama.insert(index=0, string=str(data[1]))
         self.entry_alamat.insert(index=0, string=str(data[2]))
 
-    def _toggle_main_buttons(self, state):
-        """Helper untuk mengaktifkan/mematikan tombol utama"""
-        state_val = "normal" if state == "enabled" else "disabled"
-        self.btn_tambah_data.configure(state=state_val)
-        self.btn_edit_data.configure(state=state_val)
-        self.btn_hapus_data.configure(state=state_val)
-        self.btn_cari_data.configure(state=state_val)
+    def toggle_tombol_utama(self, state):
+        status = "normal" if state == "enabled" else "disabled"
+        self.btn_tambah_data.configure(state=status)
+        self.btn_edit_data.configure(state=status)
+        self.btn_hapus_data.configure(state=status)
+        self.btn_cari_data.configure(state=status)
 
     def jalankan(self):
         self.base.mainloop()
