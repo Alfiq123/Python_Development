@@ -77,7 +77,7 @@ class TodoApp:
                            value=option, command=self.filter_tasks).pack(side=LEFT, padx=5)
         
         # Tasks area
-        task_container = ttk.LabelFrame(main_frame, text="My Tasks", padding=10)
+        task_container = ttk.Labelframe(main_frame, text="My Tasks", padding=10)
         task_container.pack(fill=BOTH, expand=YES, pady=10)
         
         self.tasks_frame = ScrolledFrame(task_container, autohide=True)
