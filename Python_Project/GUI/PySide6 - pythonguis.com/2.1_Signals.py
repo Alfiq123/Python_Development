@@ -1,5 +1,5 @@
 from sys import argv, exit
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
+from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
 
 
 class MainWindow(QMainWindow):

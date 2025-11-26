@@ -1,8 +1,9 @@
 # Context Menus
 
 from sys import argv, exit
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QAction, QApplication, QMainWindow, QMenu, QPushButton
+from PySide6.QtCore import Qt
+from PySide6.QtWidgets import QApplication, QMainWindow, QMenu, QPushButton
+from PySide6.QtGui import QAction
 
 
 class MainWindow(QMainWindow):

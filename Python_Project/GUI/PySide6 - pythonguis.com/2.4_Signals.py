@@ -1,8 +1,8 @@
 # Events
 
 from sys import argv, exit
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QApplication, QLabel, QMainWindow, QTextEdit
+from PySide6.QtCore import Qt
+from PySide6.QtWidgets import QApplication, QLabel, QMainWindow, QTextEdit
 
 
 class MainWindow(QMainWindow):

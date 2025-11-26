@@ -1,6 +1,6 @@
 from sys import argv, exit
-from PyQt5.QtCore import  QSize, Qt
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
+from PySide6.QtCore import  QSize, Qt
+from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
 
 
 # Subclass QMainWindow to customize your application's main window

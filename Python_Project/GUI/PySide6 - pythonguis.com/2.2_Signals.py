@@ -1,7 +1,7 @@
 # Changing the interface
 
 from sys import argv, exit
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
+from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
 from random import choice
 
 window_titles = [

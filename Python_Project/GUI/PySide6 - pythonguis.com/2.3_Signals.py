@@ -1,7 +1,9 @@
 # Connecting widgets together directly
 
 from sys import argv, exit
-from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QLineEdit, QVBoxLayout, QWidget
+from PySide6.QtWidgets import (
+    QApplication, QMainWindow, QLabel, QLineEdit, QVBoxLayout, QWidget
+)
 
 
 class MainWindow(QMainWindow):
