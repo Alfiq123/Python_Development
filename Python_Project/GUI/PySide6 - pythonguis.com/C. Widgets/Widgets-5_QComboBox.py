@@ -17,14 +17,14 @@ from PySide6.QtWidgets import (
 )
 
 
-## Flag                          ## Behavior
-# QComboBox.NoInsert             : Performs no insert.
-# QComboBox.InsertAtTop          : Inserts as first item.
-# QComboBox.InsertAtCurrent      : Replaces the currently selected item.
-# QComboBox.InsertAtBottom       : Inserts after the last item.
-# QComboBox.InsertAfterCurrent   : Inserts after the current item.
-# QComboBox.InsertBeforeCurrent  : Inserts before the current item.
-# QComboBox.InsertAlphabetically : Inserts in alphabetical order.
+## Flag                          | ## Behavior
+# QComboBox.NoInsert             | Performs no insert.
+# QComboBox.InsertAtTop          | Inserts as first item.
+# QComboBox.InsertAtCurrent      | Replaces the currently selected item.
+# QComboBox.InsertAtBottom       | Inserts after the last item.
+# QComboBox.InsertAfterCurrent   | Inserts after the current item.
+# QComboBox.InsertBeforeCurrent  | Inserts before the current item.
+# QComboBox.InsertAlphabetically | Inserts in alphabetical order.
 
 
 # noinspection PyUnresolvedReferences

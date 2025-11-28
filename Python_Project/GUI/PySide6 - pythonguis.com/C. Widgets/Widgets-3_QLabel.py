@@ -17,24 +17,29 @@ from PySide6.QtWidgets import (
 )
 
 
-## Horizontal Alignment
-# Qt.AlignLeft    : Aligns with the left edge.
-# Qt.AlignRight   : Aligns with the right edge.
-# Qt.AlignHCenter : Centers horizontally in the available space.
-# Qt.AlignJustify : Justifies the text in the available space.
+### Horizontal Alignment
+## Flag           | ## Behavior
+# Qt.AlignLeft    | Aligns with the left edge.
+# Qt.AlignRight   | Aligns with the right edge.
+# Qt.AlignHCenter | Centers horizontally in the available space.
+# Qt.AlignJustify | Justifies the text in the available space.
 
-## Vertical Alignment
-# Qt.AlignTop     : Aligns with the top.
-# Qt.AlignBottom  : Aligns with the bottom.
-# Qt.AlignVCenter : Centers vertically in the available space.
+### Vertical Alignment
+## Flag           | ## Behavior
+# Qt.AlignTop     | Aligns with the top.
+# Qt.AlignBottom  | Aligns with the bottom.
+# Qt.AlignVCenter | Centers vertically in the available space.
 
-# Qt.AlignCenter  : Centers horizontally and vertically.
+### Center Alignment
+## Flag           | ## Behavior
+# Qt.AlignCenter  | Centers horizontally and vertically.
 
 # You can combine flags together using pipes (`|`).
 # However, note that you can only use vertical or horizontal alignment
 #   flags at a time:
 
 
+# noinspection PyUnresolvedReferences
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -54,7 +59,7 @@ class MainWindow(QMainWindow):
         w_label.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
 
         ## Add Images
-        w_label.setPixmap(QPixmap("cat.png"))
+        w_label.setPixmap(QPixmap("../cat.png"))
         w_label.setScaledContents(True)
 
         self.setCentralWidget(w_label)

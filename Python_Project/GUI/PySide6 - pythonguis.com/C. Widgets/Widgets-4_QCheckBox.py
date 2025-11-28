@@ -17,10 +17,10 @@ from PySide6.QtWidgets import (
 )
 
 
-## Flag 	          ## Behavior
-# Qt.Unchecked        : Item is unchecked
-# Qt.PartiallyChecked : Item is partially checked
-# Qt.Checked          : Item is checked
+## Flag 	          | ## Behavior
+# Qt.Unchecked        | Item is unchecked
+# Qt.PartiallyChecked | Item is partially checked
+# Qt.Checked          | Item is checked
 
 
 # noinspection PyUnresolvedReferences
