@@ -1,17 +1,12 @@
 from sys import argv, exit
+# noinspection PyUnusedImports
 from PySide6.QtCore import Qt
+# noinspection PyUnusedImports
 from PySide6.QtGui import QPixmap
+# noinspection PyUnusedImports
 from PySide6.QtWidgets import (
-    QApplication,
-    QCheckBox,
-    QComboBox,
-    QDoubleSpinBox,
-    QLabel,
-    QLineEdit,
-    QListWidget,
-    QMainWindow,
-    QSlider,
-    QSpinBox,
+    QApplication, QCheckBox, QComboBox, QDoubleSpinBox, QLabel,
+    QLineEdit, QListWidget, QMainWindow, QSlider, QSpinBox,
 )
 
 

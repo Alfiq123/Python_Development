@@ -6,9 +6,11 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QMenu, QPushButton
 from PySide6.QtGui import QAction
 
 
+# noinspection PyUnresolvedReferences
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.setWindowTitle("Events: Context Menus")
 
         self.setContextMenuPolicy(Qt.CustomContextMenu)
         self.customContextMenuRequested.connect(self.on_context_menu)

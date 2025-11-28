@@ -59,7 +59,7 @@ class MainWindow(QMainWindow):
         w_label.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
 
         ## Add Images
-        w_label.setPixmap(QPixmap("../cat.png"))
+        w_label.setPixmap(QPixmap("cat.png"))
         w_label.setScaledContents(True)
 
         self.setCentralWidget(w_label)
