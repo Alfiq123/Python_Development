@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>427</width>
-    <height>620</height>
+    <height>622</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -80,9 +80,7 @@
       <item>
        <widget class="QLabel" name="label_2">
         <property name="styleSheet">
-         <string notr="true">font-size: 12pt;
-font-family: Inter, sans-serif;
-padding-bottom: 5px;</string>
+         <string notr="true">font-size: 12pt; font-family: Inter, sans-serif; padding-bottom: 5px;</string>
         </property>
         <property name="text">
          <string>Nama Bahan Makanan</string>
@@ -92,8 +90,7 @@ padding-bottom: 5px;</string>
       <item>
        <widget class="QLineEdit" name="lineEdit">
         <property name="styleSheet">
-         <string notr="true">padding: 10px;
-                                        font-size: 12pt;</string>
+         <string notr="true">padding: 10px; font-size: 12pt;</string>
         </property>
         <property name="placeholderText">
          <string>Contoh: Daging Sapi</string>
@@ -125,9 +122,7 @@ padding-bottom: 5px;</string>
       <item row="0" column="1">
        <widget class="QLabel" name="satuan_label">
         <property name="styleSheet">
-         <string notr="true">font-size: 12pt;
-font-family: Inter, sans-serif;
-margin-bottom: 5px;</string>
+         <string notr="true">font-size: 12pt; font-family: Inter, sans-serif; margin-bottom: 5px;</string>
         </property>
         <property name="text">
          <string>Satuan</string>
@@ -137,9 +132,7 @@ margin-bottom: 5px;</string>
       <item row="0" column="0">
        <widget class="QLabel" name="jumlah_label">
         <property name="styleSheet">
-         <string notr="true">font-size: 12pt;
-font-family: Inter, sans-serif;
-margin-bottom: 5px;</string>
+         <string notr="true">font-size: 12pt; font-family: Inter, sans-serif; margin-bottom: 5px;</string>
         </property>
         <property name="text">
          <string>Jumlah</string>
@@ -149,8 +142,7 @@ margin-bottom: 5px;</string>
       <item row="1" column="0">
        <widget class="QLineEdit" name="jumlah_edit">
         <property name="styleSheet">
-         <string notr="true">padding: 10px;
-                                        font-size: 12pt;</string>
+         <string notr="true">padding: 10px; font-size: 12pt;</string>
         </property>
         <property name="placeholderText">
          <string>Contoh: 500</string>
@@ -160,10 +152,7 @@ margin-bottom: 5px;</string>
       <item row="2" column="0">
        <widget class="QLabel" name="tanggal_label">
         <property name="styleSheet">
-         <string notr="true">font-size: 12pt;
-font-family: Inter, sans-serif;
-margin-bottom: 5px;
-margin-top: 5px;</string>
+         <string notr="true">font-size: 12pt; font-family: Inter, sans-serif; margin-bottom: 5px; margin-top: 5px;</string>
         </property>
         <property name="text">
          <string>Tanggal Pembelian</string>
@@ -173,10 +162,7 @@ margin-top: 5px;</string>
       <item row="2" column="1">
        <widget class="QLabel" name="expire_label">
         <property name="styleSheet">
-         <string notr="true">font-size: 12pt;
-font-family: Inter, sans-serif;
-margin-bottom: 5px;
-margin-top: 5px;</string>
+         <string notr="true">font-size: 12pt; font-family: Inter, sans-serif; margin-bottom: 5px; margin-top: 5px;</string>
         </property>
         <property name="text">
          <string>Tanggal Kedaluwarsa</string>
@@ -186,8 +172,7 @@ margin-top: 5px;</string>
       <item row="1" column="1">
        <widget class="QComboBox" name="satuan_combo">
         <property name="styleSheet">
-         <string notr="true">padding: 10px;
-                                        font-size: 12pt;</string>
+         <string notr="true">padding: 10px; font-size: 12pt;</string>
         </property>
         <item>
          <property name="text">
@@ -219,8 +204,7 @@ margin-top: 5px;</string>
       <item row="3" column="0">
        <widget class="QDateEdit" name="dateEdit">
         <property name="styleSheet">
-         <string notr="true">padding: 10px;
-                                        font-size: 12pt;</string>
+         <string notr="true">padding: 10px; font-size: 12pt;</string>
         </property>
         <property name="readOnly">
          <bool>false</bool>
@@ -244,8 +228,7 @@ margin-top: 5px;</string>
       <item row="3" column="1">
        <widget class="QDateEdit" name="dateEdit_2">
         <property name="styleSheet">
-         <string notr="true">padding: 10px;
-                                        font-size: 12pt;</string>
+         <string notr="true">padding: 10px; font-size: 12pt;</string>
         </property>
         <property name="date">
          <date>
@@ -275,13 +258,7 @@ margin-top: 5px;</string>
       <item row="1" column="1">
        <widget class="QRadioButton" name="radioButton_2">
         <property name="styleSheet">
-         <string notr="true">border: 1px solid;
-border-color: lightgray;
-border-radius: 5px;
-font-size: 12pt;
-font-family: Inter, sans-serif;
-margin: 5px;
-padding: 10px;</string>
+         <string notr="true">border: 1px solid; border-color: lightgray; border-radius: 5px; font-size: 12pt; font family: Inter, sans-serif; margin: 5px; padding: 10px;</string>
         </property>
         <property name="text">
          <string>Sayuran</string>
@@ -291,13 +268,7 @@ padding: 10px;</string>
       <item row="2" column="1">
        <widget class="QRadioButton" name="radioButton_5">
         <property name="styleSheet">
-         <string notr="true">border: 1px solid;
-border-color: lightgray;
-border-radius: 5px;
-font-size: 12pt;
-font-family: Inter, sans-serif;
-margin: 5px;
-padding: 10px;</string>
+         <string notr="true">border: 1px solid; border-color: lightgray; border-radius: 5px; font-size: 12pt; font family: Inter, sans-serif; margin: 5px; padding: 10px;</string>
         </property>
         <property name="text">
          <string>Roti</string>
@@ -307,13 +278,7 @@ padding: 10px;</string>
       <item row="1" column="0">
        <widget class="QRadioButton" name="radioButton">
         <property name="styleSheet">
-         <string notr="true">border: 1px solid;
-border-color: lightgray;
-border-radius: 5px;
-font-size: 12pt;
-font-family: Inter, sans-serif;
-margin: 5px;
-padding: 10px;</string>
+         <string notr="true">border: 1px solid; border-color: lightgray; border-radius: 5px; font-size: 12pt; font family: Inter, sans-serif; margin: 5px; padding: 10px;</string>
         </property>
         <property name="text">
          <string>Daging</string>
@@ -323,13 +288,7 @@ padding: 10px;</string>
       <item row="1" column="2">
        <widget class="QRadioButton" name="radioButton_3">
         <property name="styleSheet">
-         <string notr="true">border: 1px solid;
-border-color: lightgray;
-border-radius: 5px;
-font-size: 12pt;
-font-family: Inter, sans-serif;
-margin: 5px;
-padding: 10px;</string>
+         <string notr="true">border: 1px solid; border-color: lightgray; border-radius: 5px; font-size: 12pt; font family: Inter, sans-serif; margin: 5px; padding: 10px;</string>
         </property>
         <property name="text">
          <string>Buah</string>
@@ -339,13 +298,7 @@ padding: 10px;</string>
       <item row="2" column="0">
        <widget class="QRadioButton" name="radioButton_4">
         <property name="styleSheet">
-         <string notr="true">border: 1px solid;
-border-color: lightgray;
-border-radius: 5px;
-font-size: 12pt;
-font-family: Inter, sans-serif;
-margin: 5px;
-padding: 10px;</string>
+         <string notr="true">border: 1px solid; border-color: lightgray; border-radius: 5px; font-size: 12pt; font family: Inter, sans-serif; margin: 5px; padding: 10px;</string>
         </property>
         <property name="text">
          <string>Susu</string>
@@ -355,13 +308,7 @@ padding: 10px;</string>
       <item row="2" column="2">
        <widget class="QRadioButton" name="radioButton_6">
         <property name="styleSheet">
-         <string notr="true">border: 1px solid;
-border-color: lightgray;
-border-radius: 5px;
-font-size: 12pt;
-font-family: Inter, sans-serif;
-margin: 5px;
-padding: 10px;</string>
+         <string notr="true">border: 1px solid; border-color: lightgray; border-radius: 5px; font-size: 12pt; font family: Inter, sans-serif; margin: 5px; padding: 10px;</string>
         </property>
         <property name="text">
          <string>Lainnya</string>
@@ -371,9 +318,7 @@ padding: 10px;</string>
       <item row="0" column="0" colspan="3">
        <widget class="QLabel" name="label_3">
         <property name="styleSheet">
-         <string notr="true">font-size: 12pt;
-font-family: Inter, sans-serif;
-margin-bottom: 5px;</string>
+         <string notr="true">font-size: 12pt; font-family: Inter, sans-serif; margin-bottom: 5px;</string>
         </property>
         <property name="text">
          <string>Kategori</string>
@@ -399,38 +344,7 @@ margin-bottom: 5px;</string>
       <item>
        <widget class="QPushButton" name="btn_batal">
         <property name="styleSheet">
-         <string notr="true">QPushButton#btn_batal {
-                                        height: 44px; /* h-11 */
-                                        padding: 0 24px; /* px-6 */
-                                        border: 1px solid;
-                                        border-radius: 8px; /* rounded-lg */
-                                        background: rgba(229,231,235,0.8); /* bg-gray-200/80
-                                        */
-                                        color: rgb(31,41,55); /* text-gray-800 */
-                                        font-size: 12pt; /* text-sm */
-                                        font-weight: 600; /* font-semibold */
-                                        }
-
-                                        /* Hover */
-                                        QPushButton#btn_batal:hover {
-                                        background: rgba(209,213,219,0.8); /*
-                                        hover:bg-gray-300/80 */
-                                        }
-
-                                        /* Dark mode (Qt tidak punya otomatis, jadi harus
-                                        manual) */
-                                        /* Biasanya diganti via setStyleSheet() ketika mode
-                                        gelap aktif */
-                                        QPushButton#btn_batal.dark {
-                                        background: rgba(55,65,81,0.5); /*
-                                        dark:bg-gray-700/50 */
-                                        color: rgb(229,231,235); /* dark:text-gray-200 */
-                                        }
-
-                                        QPushButton#btn_batal.dark:hover {
-                                        background: rgba(75,85,99,0.5); /*
-                                        dark:hover:bg-gray-600/50 */
-                                        }</string>
+         <string notr="true">QPushButton#btn_batal { height: 44px; padding: 0 24px; border: 1px solid; border-radius: 8px; background: rgba(229,231,235,0.8); color: rgb(31,41,55); font-size: 12pt; font-weight: 600; } QPushButton#btn_batal:hover { background: rgba(209,213,219,0.8); } QPushButton#btn_batal.dark { background: rgba(55,65,81,0.5); color: rgb(229,231,235); } QPushButton#btn_batal.dark:hover { background: rgba(75,85,99,0.5); }</string>
         </property>
         <property name="text">
          <string>Batal</string>
@@ -440,28 +354,7 @@ margin-bottom: 5px;</string>
       <item>
        <widget class="QPushButton" name="btn_simpan">
         <property name="styleSheet">
-         <string notr="true">QPushButton#btn_simpan {
-                                        height: 44px; /* h-11 */
-                                        padding: 0 24px; /* px-6 */
-                                        border: 1px solid;
-                                        border-radius: 8px; /* rounded-lg */
-                                        background: rgb(25, 230, 94); /* bg-primary → pilih
-                                        warna sendiri */
-                                        color: black; /* text-black */
-                                        font-size: 12pt; /* text-sm */
-                                        font-weight: 600; /* font-semibold */
-                                        }
-
-                                        /* QSS TIDAK BISA scale transform di hover */
-                                        QPushButton#btn_simpan:hover {
-                                        /* workarounds */
-                                        padding: 0 26px; /* buat seolah-olah membesar */
-                                        }
-
-                                        /* active:scale-95 → tidak ada, jadi manual */
-                                        QPushButton#btn_simpan:pressed {
-                                        padding: 0 22px;
-                                        }</string>
+         <string notr="true">QPushButton#btn_simpan { height: 44px; padding: 0 24px; border: 1px solid; border-radius: 8px; background: rgb(25, 230, 94); color: black; font-size: 12pt; font-weight: 600; } QPushButton#btn_simpan:hover { background: rgba(209,213,219,0.8); }</string>
         </property>
         <property name="text">
          <string>Simpan</string>

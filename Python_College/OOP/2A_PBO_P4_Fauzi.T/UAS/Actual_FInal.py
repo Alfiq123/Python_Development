@@ -1,5 +1,6 @@
 from sys import argv, exit
 from MainWindow_Final import Ui_MainWindow
+from PySide6.QtCore import QPropertyAnimation, QEasingCurve
 from PySide6.QtWidgets import QApplication, QMainWindow
 
 
@@ -17,3 +18,4 @@ if __name__ == "__main__":
     window.show()
 
     exit(app.exec())
+
