@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'MainWindow_PageqxUkAR.ui'
+## Form generated from reading UI file 'MainWindow_PagembHohY.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -15,23 +15,23 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QComboBox, QDateEdit, QFrame,
-    QGridLayout, QHBoxLayout, QHeaderView, QLabel,
-    QLineEdit, QMainWindow, QPushButton, QRadioButton,
-    QSizePolicy, QSpacerItem, QStackedWidget, QTableView,
-    QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QAbstractItemView, QApplication, QComboBox, QDateEdit,
+    QFrame, QGridLayout, QHBoxLayout, QHeaderView,
+    QLabel, QLineEdit, QMainWindow, QPushButton,
+    QRadioButton, QSizePolicy, QSpacerItem, QStackedWidget,
+    QTableView, QVBoxLayout, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(684, 656)
+        MainWindow.resize(684, 664)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.gridLayout = QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName(u"gridLayout")
-        self.stackedWidget = QStackedWidget(self.centralwidget)
-        self.stackedWidget.setObjectName(u"stackedWidget")
+        self.pages = QStackedWidget(self.centralwidget)
+        self.pages.setObjectName(u"pages")
         self.page_1 = QWidget()
         self.page_1.setObjectName(u"page_1")
         self.gridLayout_3 = QGridLayout(self.page_1)
@@ -159,7 +159,7 @@ class Ui_MainWindow(object):
 
         self.p14_input = QFrame(self.page_1)
         self.p14_input.setObjectName(u"p14_input")
-        self.p14_input.setStyleSheet(u"QLabel { font-size: 12pt; font-family: Inter, sans-serif; } QLineEdit,QComboBox,QDateEdit { font-size: 12pt; padding: 10px; }")
+        self.p14_input.setStyleSheet(u"QLabel { font-size: 12pt; font-family: Helvetica, Inter, sans-serif; } QLineEdit,QComboBox,QDateEdit { font-size: 12pt; padding: 10px; }")
         self.layout3_grid = QGridLayout(self.p14_input)
         self.layout3_grid.setObjectName(u"layout3_grid")
         self.layout3_grid.setHorizontalSpacing(10)
@@ -202,6 +202,7 @@ class Ui_MainWindow(object):
         self.satuan_combo.addItem("")
         self.satuan_combo.addItem("")
         self.satuan_combo.setObjectName(u"satuan_combo")
+        self.satuan_combo.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.satuan_combo.setStyleSheet(u"")
 
         self.layout3_grid.addWidget(self.satuan_combo, 1, 1, 1, 1)
@@ -209,16 +210,20 @@ class Ui_MainWindow(object):
         self.tanggal_date = QDateEdit(self.p14_input)
         self.tanggal_date.setObjectName(u"tanggal_date")
         self.tanggal_date.setStyleSheet(u"")
+        self.tanggal_date.setLocale(QLocale(QLocale.Indonesian, QLocale.Indonesia))
         self.tanggal_date.setReadOnly(False)
+        self.tanggal_date.setDateTime(QDateTime(QDate(2025, 12, 1), QTime(0, 0, 0)))
         self.tanggal_date.setMaximumDate(QDate(9999, 11, 30))
-        self.tanggal_date.setDate(QDate(2025, 1, 12))
+        self.tanggal_date.setDate(QDate(2025, 12, 1))
 
         self.layout3_grid.addWidget(self.tanggal_date, 3, 0, 1, 1)
 
         self.expire_date = QDateEdit(self.p14_input)
         self.expire_date.setObjectName(u"expire_date")
         self.expire_date.setStyleSheet(u"")
-        self.expire_date.setDate(QDate(2025, 1, 12))
+        self.expire_date.setLocale(QLocale(QLocale.Indonesian, QLocale.Indonesia))
+        self.expire_date.setDateTime(QDateTime(QDate(2025, 12, 1), QTime(0, 0, 0)))
+        self.expire_date.setDate(QDate(2025, 12, 1))
 
         self.layout3_grid.addWidget(self.expire_date, 3, 1, 1, 1)
 
@@ -227,24 +232,25 @@ class Ui_MainWindow(object):
 
         self.gridLayout_3.addWidget(self.p14_input, 2, 1, 1, 1)
 
-        self.stackedWidget.addWidget(self.page_1)
+        self.pages.addWidget(self.page_1)
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
         self.gridLayout_4 = QGridLayout(self.page_2)
         self.gridLayout_4.setObjectName(u"gridLayout_4")
         self.p32_transaksi = QFrame(self.page_2)
         self.p32_transaksi.setObjectName(u"p32_transaksi")
-        self.p32_transaksi.setStyleSheet(u"QFrame#p32_transaksi { border: 1px solid; border-color: lightgray; border-radius: 5px; padding: 20px 10px 20px 10px; } QPushButton { border: 1px solid; border-radius: 5px; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; margin: 10px; padding: 10px; }")
+        self.p32_transaksi.setStyleSheet(u"QFrame#p32_transaksi { border: 1px solid; border-color: lightgray; border-radius: 5px; padding: 20px 10px 20px 10px; } QPushButton { border: 1px solid; border-radius: 5px; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; margin: 10px; padding: 10px; } QPushButton:hover { background-color: AntiqueWhite; } QPushButton:pressed { background-color: Bisque; } QLabel { font-family: Helvetica, Inter, sans-serif; font-size: 12pt; }")
         self.gridLayout_6 = QGridLayout(self.p32_transaksi)
         self.gridLayout_6.setObjectName(u"gridLayout_6")
         self.label_9 = QLabel(self.p32_transaksi)
         self.label_9.setObjectName(u"label_9")
-        self.label_9.setStyleSheet(u"font-size: 12pt; font-family: Inter, sans-serif; margin: 5px;")
+        self.label_9.setStyleSheet(u"")
 
         self.gridLayout_6.addWidget(self.label_9, 4, 0, 1, 1)
 
         self.pushButton_2 = QPushButton(self.p32_transaksi)
         self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setCursor(QCursor(Qt.CursorShape.CrossCursor))
         self.pushButton_2.setStyleSheet(u"")
 
         self.gridLayout_6.addWidget(self.pushButton_2, 3, 1, 1, 1)
@@ -252,18 +258,20 @@ class Ui_MainWindow(object):
         self.dateEdit = QDateEdit(self.p32_transaksi)
         self.dateEdit.setObjectName(u"dateEdit")
         self.dateEdit.setStyleSheet(u"font-size: 12pt; font-family: Inter, sans-serif; padding: 10px; margin: 5px;")
+        self.dateEdit.setLocale(QLocale(QLocale.Indonesian, QLocale.Indonesia))
+        self.dateEdit.setDateTime(QDateTime(QDate(2025, 11, 30), QTime(0, 0, 0)))
 
         self.gridLayout_6.addWidget(self.dateEdit, 5, 1, 1, 1)
 
         self.label_4 = QLabel(self.p32_transaksi)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setStyleSheet(u"font-size: 12pt; font-family: Inter, sans-serif; margin: 5px;")
+        self.label_4.setStyleSheet(u"")
 
         self.gridLayout_6.addWidget(self.label_4, 2, 0, 1, 2)
 
         self.label_10 = QLabel(self.p32_transaksi)
         self.label_10.setObjectName(u"label_10")
-        self.label_10.setStyleSheet(u"font-size: 12pt; font-family: Inter, sans-serif; margin: 5px;")
+        self.label_10.setStyleSheet(u"")
 
         self.gridLayout_6.addWidget(self.label_10, 4, 1, 1, 1)
 
@@ -275,18 +283,21 @@ class Ui_MainWindow(object):
 
         self.pushButton_3 = QPushButton(self.p32_transaksi)
         self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.pushButton_3.setStyleSheet(u"")
 
         self.gridLayout_6.addWidget(self.pushButton_3, 6, 1, 1, 1)
 
         self.pushButton = QPushButton(self.p32_transaksi)
         self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setCursor(QCursor(Qt.CursorShape.CrossCursor))
         self.pushButton.setStyleSheet(u"")
 
         self.gridLayout_6.addWidget(self.pushButton, 3, 0, 1, 1)
 
         self.pushButton_4 = QPushButton(self.p32_transaksi)
         self.pushButton_4.setObjectName(u"pushButton_4")
+        self.pushButton_4.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.pushButton_4.setStyleSheet(u"")
 
         self.gridLayout_6.addWidget(self.pushButton_4, 6, 0, 1, 1)
@@ -299,7 +310,7 @@ class Ui_MainWindow(object):
 
         self.label_3 = QLabel(self.p32_transaksi)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setStyleSheet(u"font-size: 12pt; font-family: Inter, sans-serif; margin: 5px;")
+        self.label_3.setStyleSheet(u"")
 
         self.gridLayout_6.addWidget(self.label_3, 0, 0, 1, 2)
 
@@ -339,11 +350,11 @@ class Ui_MainWindow(object):
 
         self.gridLayout_4.addWidget(self.p31_heading, 2, 0, 1, 1)
 
-        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.vspacer2 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
-        self.gridLayout_4.addItem(self.verticalSpacer, 4, 0, 1, 1)
+        self.gridLayout_4.addItem(self.vspacer2, 4, 0, 1, 1)
 
-        self.stackedWidget.addWidget(self.page_2)
+        self.pages.addWidget(self.page_2)
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
         self.gridLayout_8 = QGridLayout(self.page_3)
@@ -358,7 +369,7 @@ class Ui_MainWindow(object):
 
         self.label_6 = QLabel(self.page_3)
         self.label_6.setObjectName(u"label_6")
-        self.label_6.setStyleSheet(u"font-family: Helvetica, Inter, Sans-serif; font-size: 16px; font-color: gray; padding: 5px 10px 5px 10px;")
+        self.label_6.setStyleSheet(u"font-family: Helvetica, Inter, Sans-serif; font-size: 16px; color: gray; padding: 5px 10px 5px 10px;")
 
         self.verticalLayout_7.addWidget(self.label_6)
 
@@ -371,7 +382,9 @@ class Ui_MainWindow(object):
         self.gridLayout_10.setObjectName(u"gridLayout_10")
         self.tableView = QTableView(self.frame_2)
         self.tableView.setObjectName(u"tableView")
-        self.tableView.setStyleSheet(u"padding: 10px; margin: 5px;")
+        self.tableView.setStyleSheet(u"font-family: Helvetica, Inter, sans-serif; font-size: 12pt;")
+        self.tableView.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
+        self.tableView.setWordWrap(False)
 
         self.gridLayout_10.addWidget(self.tableView, 1, 0, 1, 1)
 
@@ -429,48 +442,66 @@ class Ui_MainWindow(object):
 
         self.gridLayout_8.addLayout(self.verticalLayout_7, 0, 0, 1, 1)
 
-        self.stackedWidget.addWidget(self.page_3)
+        self.pages.addWidget(self.page_3)
 
-        self.gridLayout.addWidget(self.stackedWidget, 0, 1, 1, 1)
+        self.gridLayout.addWidget(self.pages, 0, 1, 1, 1)
 
         self.base_sidebar = QFrame(self.centralwidget)
         self.base_sidebar.setObjectName(u"base_sidebar")
         sizePolicy2.setHeightForWidth(self.base_sidebar.sizePolicy().hasHeightForWidth())
         self.base_sidebar.setSizePolicy(sizePolicy2)
-        self.base_sidebar.setStyleSheet(u"QFrame#base_sidebar { border: 1px solid; border-radius: 5px; border-color: LightGray; }")
+        self.base_sidebar.setStyleSheet(u"QFrame#base_sidebar { border: 1px solid; border-radius: 5px; border-color: LightGray; } QLabel { font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; font-weight: bold; padding: 10px 10px 10px 10px; } QPushButton { font-family: Helvetica, Inter, Sans-serif; padding: 10px; margin: 5px; font-size: 12pt; }")
         self.verticalLayout = QVBoxLayout(self.base_sidebar)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(8, 8, 8, 8)
-        self.label_profil = QLabel(self.base_sidebar)
+        self.foto_profil = QFrame(self.base_sidebar)
+        self.foto_profil.setObjectName(u"foto_profil")
+        self.horizontalLayout = QHBoxLayout(self.foto_profil)
+        self.horizontalLayout.setSpacing(0)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.label_profil = QLabel(self.foto_profil)
         self.label_profil.setObjectName(u"label_profil")
-        self.label_profil.setStyleSheet(u"font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; font-weight: bold; padding: 10px 10px 0px 10px;")
+        self.label_profil.setMaximumSize(QSize(32, 32))
+        self.label_profil.setStyleSheet(u"margin: 0px 0px 0px 0px; padding: 0px 2px 0px 0px;")
+        self.label_profil.setPixmap(QPixmap(u"Python_College/OOP/2A_PBO_P4_Fauzi.T/UAS/Assets/user.png"))
+        self.label_profil.setScaledContents(True)
 
-        self.verticalLayout.addWidget(self.label_profil, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
+        self.horizontalLayout.addWidget(self.label_profil)
 
-        self.tombol_input = QPushButton(self.base_sidebar)
-        self.tombol_input.setObjectName(u"tombol_input")
-        self.tombol_input.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.tombol_input.setStyleSheet(u"font-family: Helvetica, Inter, Sans-serif; padding: 10px; margin: 5px; font-size: 12pt;")
+        self.label_profilnama = QLabel(self.foto_profil)
+        self.label_profilnama.setObjectName(u"label_profilnama")
+        self.label_profilnama.setStyleSheet(u"margin: 0px 0px 0px 0px; padding: 0px 0px 0px 2px;")
 
-        self.verticalLayout.addWidget(self.tombol_input)
+        self.horizontalLayout.addWidget(self.label_profilnama, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
-        self.tombol_transaksi = QPushButton(self.base_sidebar)
-        self.tombol_transaksi.setObjectName(u"tombol_transaksi")
-        self.tombol_transaksi.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.tombol_transaksi.setStyleSheet(u"font-family: Helvetica, Inter, Sans-serif; padding: 10px; margin: 5px; font-size: 12pt;")
 
-        self.verticalLayout.addWidget(self.tombol_transaksi)
+        self.verticalLayout.addWidget(self.foto_profil, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
-        self.tombol_laporan = QPushButton(self.base_sidebar)
-        self.tombol_laporan.setObjectName(u"tombol_laporan")
-        self.tombol_laporan.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.tombol_laporan.setStyleSheet(u"font-family: Helvetica, Inter, Sans-serif; padding: 10px; margin: 5px; font-size: 12pt;")
+        self.side_input = QPushButton(self.base_sidebar)
+        self.side_input.setObjectName(u"side_input")
+        self.side_input.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.side_input.setStyleSheet(u"")
 
-        self.verticalLayout.addWidget(self.tombol_laporan)
+        self.verticalLayout.addWidget(self.side_input)
 
-        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.side_transaksi = QPushButton(self.base_sidebar)
+        self.side_transaksi.setObjectName(u"side_transaksi")
+        self.side_transaksi.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.side_transaksi.setStyleSheet(u"")
 
-        self.verticalLayout.addItem(self.verticalSpacer_2)
+        self.verticalLayout.addWidget(self.side_transaksi)
+
+        self.side_laporan = QPushButton(self.base_sidebar)
+        self.side_laporan.setObjectName(u"side_laporan")
+        self.side_laporan.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.side_laporan.setStyleSheet(u"")
+
+        self.verticalLayout.addWidget(self.side_laporan)
+
+        self.vspacer1 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout.addItem(self.vspacer1)
 
 
         self.gridLayout.addWidget(self.base_sidebar, 0, 0, 1, 1)
@@ -479,7 +510,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.pages.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -511,14 +542,17 @@ class Ui_MainWindow(object):
         self.satuan_combo.setItemText(3, QCoreApplication.translate("MainWindow", u"ml", None))
         self.satuan_combo.setItemText(4, QCoreApplication.translate("MainWindow", u"liter", None))
 
-        self.label_9.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.tanggal_date.setDisplayFormat(QCoreApplication.translate("MainWindow", u"dd MMMM yyyy", None))
+        self.expire_date.setDisplayFormat(QCoreApplication.translate("MainWindow", u"dd MMMM yyyy", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Jumlah Transaksi", None))
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Keluar", None))
-        self.label_4.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.label_10.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.dateEdit.setDisplayFormat(QCoreApplication.translate("MainWindow", u"dd MMMM yyyy", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Jenis Transaksi", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"Tanggal Transaksi", None))
         self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Proses Transaksi", None))
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Masuk", None))
         self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Reset Form", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Nama Bahan Makanan", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Transaksi Bahan Makanan Baru", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Isi form di bawah untuk mencatat bahan makanan", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Laporan Kedaluwarsa", None))
@@ -528,9 +562,10 @@ class Ui_MainWindow(object):
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"Tanggal Kedaluwarsa", None))
         self.radioButton.setText(QCoreApplication.translate("MainWindow", u"RadioButton", None))
         self.radioButton_3.setText(QCoreApplication.translate("MainWindow", u"RadioButton", None))
-        self.label_profil.setText(QCoreApplication.translate("MainWindow", u"Fauzi", None))
-        self.tombol_input.setText(QCoreApplication.translate("MainWindow", u"Input", None))
-        self.tombol_transaksi.setText(QCoreApplication.translate("MainWindow", u"Transaksi", None))
-        self.tombol_laporan.setText(QCoreApplication.translate("MainWindow", u"Laporan", None))
+        self.label_profil.setText("")
+        self.label_profilnama.setText(QCoreApplication.translate("MainWindow", u"Profil", None))
+        self.side_input.setText(QCoreApplication.translate("MainWindow", u"Input", None))
+        self.side_transaksi.setText(QCoreApplication.translate("MainWindow", u"Transaksi", None))
+        self.side_laporan.setText(QCoreApplication.translate("MainWindow", u"Laporan", None))
     # retranslateUi
 
