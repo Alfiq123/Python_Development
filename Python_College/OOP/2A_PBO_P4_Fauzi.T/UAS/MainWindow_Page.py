@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'MainWindow_PagevxrGyL.ui'
+## Form generated from reading UI file 'MainWindow_PageDryzvk.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -30,69 +30,6 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.gridLayout = QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName(u"gridLayout")
-        self.base_sidebar = QFrame(self.centralwidget)
-        self.base_sidebar.setObjectName(u"base_sidebar")
-        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.base_sidebar.sizePolicy().hasHeightForWidth())
-        self.base_sidebar.setSizePolicy(sizePolicy)
-        self.base_sidebar.setStyleSheet(u"QFrame#base_sidebar { border: 1px solid; border-radius: 5px; border-color: LightGray; } QLabel { font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; font-weight: bold; padding: 10px 10px 10px 10px; } QPushButton { background-color: hsl(33, 29%, 70%); border: 1px solid; border-radius: 5px; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; padding: 10px; margin: 5px; } QPushButton:hover { background-color: hsl(27, 19%, 82%); }")
-        self.verticalLayout = QVBoxLayout(self.base_sidebar)
-        self.verticalLayout.setObjectName(u"verticalLayout")
-        self.verticalLayout.setContentsMargins(8, 8, 8, 8)
-        self.foto_profil = QFrame(self.base_sidebar)
-        self.foto_profil.setObjectName(u"foto_profil")
-        self.horizontalLayout = QHBoxLayout(self.foto_profil)
-        self.horizontalLayout.setSpacing(0)
-        self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
-        self.label_profil = QLabel(self.foto_profil)
-        self.label_profil.setObjectName(u"label_profil")
-        self.label_profil.setMaximumSize(QSize(32, 32))
-        self.label_profil.setStyleSheet(u"margin: 0px 0px 0px 0px; padding: 0px 2px 0px 0px;")
-        self.label_profil.setPixmap(QPixmap(u"Python_College/OOP/2A_PBO_P4_Fauzi.T/UAS/Assets/user.png"))
-        self.label_profil.setScaledContents(True)
-
-        self.horizontalLayout.addWidget(self.label_profil)
-
-        self.label_profilnama = QLabel(self.foto_profil)
-        self.label_profilnama.setObjectName(u"label_profilnama")
-        self.label_profilnama.setStyleSheet(u"margin: 0px 0px 0px 0px; padding: 0px 0px 0px 2px;")
-
-        self.horizontalLayout.addWidget(self.label_profilnama, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
-
-
-        self.verticalLayout.addWidget(self.foto_profil, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
-
-        self.side_input = QPushButton(self.base_sidebar)
-        self.side_input.setObjectName(u"side_input")
-        self.side_input.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.side_input.setStyleSheet(u"")
-
-        self.verticalLayout.addWidget(self.side_input)
-
-        self.side_transaksi = QPushButton(self.base_sidebar)
-        self.side_transaksi.setObjectName(u"side_transaksi")
-        self.side_transaksi.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.side_transaksi.setStyleSheet(u"")
-
-        self.verticalLayout.addWidget(self.side_transaksi)
-
-        self.side_laporan = QPushButton(self.base_sidebar)
-        self.side_laporan.setObjectName(u"side_laporan")
-        self.side_laporan.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.side_laporan.setStyleSheet(u"")
-
-        self.verticalLayout.addWidget(self.side_laporan)
-
-        self.vspacer1 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
-
-        self.verticalLayout.addItem(self.vspacer1)
-
-
-        self.gridLayout.addWidget(self.base_sidebar, 0, 0, 1, 1)
-
         self.pages = QStackedWidget(self.centralwidget)
         self.pages.setObjectName(u"pages")
         self.page_1 = QWidget()
@@ -373,7 +310,7 @@ class Ui_MainWindow(object):
         self.p22_09_datetanggal.setObjectName(u"p22_09_datetanggal")
         self.p22_09_datetanggal.setStyleSheet(u"font-size: 12pt; font-family: Inter, sans-serif; padding: 10px; margin: 5px;")
         self.p22_09_datetanggal.setLocale(QLocale(QLocale.Indonesian, QLocale.Indonesia))
-        self.p22_09_datetanggal.setDateTime(QDateTime(QDate(2025, 12, 1), QTime(0, 0, 0)))
+        self.p22_09_datetanggal.setDateTime(QDateTime(QDate(2025, 11, 30), QTime(0, 0, 0)))
 
         self.gridLayout_6.addWidget(self.p22_09_datetanggal, 5, 1, 1, 1)
 
@@ -384,28 +321,28 @@ class Ui_MainWindow(object):
 
         self.p21_heading = QFrame(self.page_2)
         self.p21_heading.setObjectName(u"p21_heading")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        sizePolicy1.setHorizontalStretch(0)
-        sizePolicy1.setVerticalStretch(0)
-        sizePolicy1.setHeightForWidth(self.p21_heading.sizePolicy().hasHeightForWidth())
-        self.p21_heading.setSizePolicy(sizePolicy1)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.p21_heading.sizePolicy().hasHeightForWidth())
+        self.p21_heading.setSizePolicy(sizePolicy)
         self.verticalLayout_5 = QVBoxLayout(self.p21_heading)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.p21_head = QLabel(self.p21_heading)
         self.p21_head.setObjectName(u"p21_head")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
-        sizePolicy2.setHorizontalStretch(0)
-        sizePolicy2.setVerticalStretch(0)
-        sizePolicy2.setHeightForWidth(self.p21_head.sizePolicy().hasHeightForWidth())
-        self.p21_head.setSizePolicy(sizePolicy2)
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.p21_head.sizePolicy().hasHeightForWidth())
+        self.p21_head.setSizePolicy(sizePolicy1)
         self.p21_head.setStyleSheet(u"font-size: 26px; font-weight: bold; font-family: Helvetica, Inter, Sans-serif;")
 
         self.verticalLayout_5.addWidget(self.p21_head)
 
         self.p21_headsub = QLabel(self.p21_heading)
         self.p21_headsub.setObjectName(u"p21_headsub")
-        sizePolicy2.setHeightForWidth(self.p21_headsub.sizePolicy().hasHeightForWidth())
-        self.p21_headsub.setSizePolicy(sizePolicy2)
+        sizePolicy1.setHeightForWidth(self.p21_headsub.sizePolicy().hasHeightForWidth())
+        self.p21_headsub.setSizePolicy(sizePolicy1)
         self.p21_headsub.setStyleSheet(u"color: #666; font-size: 16px;")
 
         self.verticalLayout_5.addWidget(self.p21_headsub)
@@ -500,6 +437,69 @@ class Ui_MainWindow(object):
 
         self.gridLayout.addWidget(self.pages, 0, 1, 1, 1)
 
+        self.base_sidebar = QFrame(self.centralwidget)
+        self.base_sidebar.setObjectName(u"base_sidebar")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.base_sidebar.sizePolicy().hasHeightForWidth())
+        self.base_sidebar.setSizePolicy(sizePolicy2)
+        self.base_sidebar.setStyleSheet(u"QFrame#base_sidebar { border: 1px solid; border-radius: 5px; border-color: LightGray; } QLabel { font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; font-weight: bold; padding: 10px 10px 10px 10px; } QPushButton { background-color: hsl(33, 29%, 70%); border: 1px solid; border-radius: 5px; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; padding: 10px; margin: 5px; } QPushButton:hover { background-color: hsl(27, 19%, 82%); }")
+        self.verticalLayout = QVBoxLayout(self.base_sidebar)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(8, 8, 8, 8)
+        self.foto_profil = QFrame(self.base_sidebar)
+        self.foto_profil.setObjectName(u"foto_profil")
+        self.horizontalLayout = QHBoxLayout(self.foto_profil)
+        self.horizontalLayout.setSpacing(0)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.label_profil = QLabel(self.foto_profil)
+        self.label_profil.setObjectName(u"label_profil")
+        self.label_profil.setMaximumSize(QSize(32, 32))
+        self.label_profil.setStyleSheet(u"margin: 0px 0px 0px 0px; padding: 0px 2px 0px 0px;")
+        self.label_profil.setPixmap(QPixmap(u"Python_College/OOP/2A_PBO_P4_Fauzi.T/UAS/Assets/user.png"))
+        self.label_profil.setScaledContents(True)
+
+        self.horizontalLayout.addWidget(self.label_profil)
+
+        self.label_profilnama = QLabel(self.foto_profil)
+        self.label_profilnama.setObjectName(u"label_profilnama")
+        self.label_profilnama.setStyleSheet(u"margin: 0px 0px 0px 0px; padding: 0px 0px 0px 2px;")
+
+        self.horizontalLayout.addWidget(self.label_profilnama, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
+
+
+        self.verticalLayout.addWidget(self.foto_profil, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
+
+        self.side_input = QPushButton(self.base_sidebar)
+        self.side_input.setObjectName(u"side_input")
+        self.side_input.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.side_input.setStyleSheet(u"")
+
+        self.verticalLayout.addWidget(self.side_input)
+
+        self.side_transaksi = QPushButton(self.base_sidebar)
+        self.side_transaksi.setObjectName(u"side_transaksi")
+        self.side_transaksi.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.side_transaksi.setStyleSheet(u"")
+
+        self.verticalLayout.addWidget(self.side_transaksi)
+
+        self.side_laporan = QPushButton(self.base_sidebar)
+        self.side_laporan.setObjectName(u"side_laporan")
+        self.side_laporan.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.side_laporan.setStyleSheet(u"")
+
+        self.verticalLayout.addWidget(self.side_laporan)
+
+        self.vspacer1 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout.addItem(self.vspacer1)
+
+
+        self.gridLayout.addWidget(self.base_sidebar, 0, 0, 1, 1)
+
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -512,11 +512,6 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.label_profil.setText("")
-        self.label_profilnama.setText(QCoreApplication.translate("MainWindow", u"Profil", None))
-        self.side_input.setText(QCoreApplication.translate("MainWindow", u"Input", None))
-        self.side_transaksi.setText(QCoreApplication.translate("MainWindow", u"Transaksi", None))
-        self.side_laporan.setText(QCoreApplication.translate("MainWindow", u"Laporan", None))
         self.label_headsub.setText(QCoreApplication.translate("MainWindow", u"Tambahkan item baru untuk memantau tanggal kedaluarsa", None))
         self.label_head.setText(QCoreApplication.translate("MainWindow", u"Input Bahan Makanan", None))
         self.p13_01_labelnama.setText(QCoreApplication.translate("MainWindow", u"Nama Bahan Makanan", None))
@@ -569,5 +564,10 @@ class Ui_MainWindow(object):
         self.p32_02_combokategori.setItemText(5, QCoreApplication.translate("MainWindow", u"Roti", None))
         self.p32_02_combokategori.setItemText(6, QCoreApplication.translate("MainWindow", u"Lainnya", None))
 
+        self.label_profil.setText("")
+        self.label_profilnama.setText(QCoreApplication.translate("MainWindow", u"Profil", None))
+        self.side_input.setText(QCoreApplication.translate("MainWindow", u"Input", None))
+        self.side_transaksi.setText(QCoreApplication.translate("MainWindow", u"Transaksi", None))
+        self.side_laporan.setText(QCoreApplication.translate("MainWindow", u"Laporan", None))
     # retranslateUi
 

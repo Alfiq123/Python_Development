@@ -3,7 +3,7 @@ from datetime import date, datetime, timedelta
 
 from MainWindow_Page import Ui_MainWindow
 
-from PySide6.QtCore import QDate, QDateTime
+from PySide6.QtCore import QDate, QDateTime, QObject, Signal
 from PySide6.QtSql import QSqlDatabase, QSqlTableModel, QSqlQuery
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QHeaderView, QMessageBox, QStyledItemDelegate)
@@ -40,16 +40,80 @@ class GantiTanggal(QStyledItemDelegate):
         elif isinstance(value, (datetime.date, datetime.datetime)):
             return value.strftime("%Y/%m/%d")
 
-        return super().displayText(value, locale)
+        else:
+            return super().displayText(value, locale)
 
 
-class InputUser:
-    def __init__(self):
-        self.__nama = None
-        self.__jumlah = None
-        self.__satuan = None
-        self.__tglbeli = None
-        self.__tglexpire = None
+class ExpireDelegate(QStyledItemDelegate):
+    def displayText(self, value, locale):
+        if not value:
+            return ""
+        today = date.today()
+        selisih = (value.toPyDate() - today).days
+        if selisih > 0:
+            return f"{selisih} hari lagi"
+        elif selisih == 0:
+            return "Hari ini kadaluarsa"
+        else:
+            return f"Sudah {abs(selisih)} hari"
+
+
+class InputUser(QObject):
+    sinyal = Signal()
+
+    def __init__(self, ui):
+        super().__init__()
+        self.ui = ui
+        self.ui.tombol_simpan.clicked.connect(self.simpan_data)
+
+    def simpan_data(self):
+        __nama = self.ui.p13_02_inputnama.text()
+        __jumlah = self.ui.p14_02_inputjumlah.text()
+        __satuan = self.ui.p14_04_combosatuan.currentText()
+        __tglbeli = self.ui.p14_06_datetanggal.date().toString("yyyy-MM-dd")
+        __tglexpire = self.ui.p14_08_dateexpire.date().toString("yyyy-MM-dd")
+        __kategori = ""
+
+        if self.ui.p15_02_radiodaging.isChecked():
+            __kategori = "Daging"
+        elif self.ui.p15_03_radiosayuran.isChecked():
+            __kategori = "Sayuran"
+        elif self.ui.p15_04_radiobuah.isChecked():
+            __kategori = "Buah"
+        elif self.ui.p15_05_radiosusu.isChecked():
+            __kategori = "Susu"
+        elif self.ui.p15_06_radioroti.isChecked():
+            __kategori = "Roti"
+        else:
+            __kategori = "Lainnya"
+
+        query = QSqlQuery()
+        query.prepare("""
+            INSERT INTO `Input User` (
+                `Nama`, `Jumlah`, `Satuan`, 
+                `Tanggal Pembelian`, `Tanggal Kedaluwarsa`, `Kategori`
+            )
+            VALUES (?, ?, ?, ?, ?, ?)
+        """)
+        query.addBindValue(__nama)
+        query.addBindValue(__jumlah)
+        query.addBindValue(__satuan)
+        query.addBindValue(__tglbeli)
+        query.addBindValue(__tglexpire)
+        query.addBindValue(__kategori)
+
+        if query.exec():
+            QMessageBox.information(
+                QMainWindow(),
+                "Info",
+                "Data berhasil disimpan")
+            self.sinyal.emit()
+
+        else:
+            QMessageBox.critical(
+                QMainWindow(),
+                "Peringatan",
+                f"Gagal menyimpan: {query.lastError().text()}")
 
 
 # noinspection PyUnresolvedReferences
@@ -59,22 +123,26 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        # Deklarasi variabel lewat fungsi
+        self.inputuser = InputUser(self.ui)
+        self.inputuser.sinyal.connect(self.reload_data)
+
         self.model = None
 
-        # Memperluas kode lewat fungsi
+        self.tabel_sql()  # 1
+        self.redirect()  # 2
         self.p2_iterasi_nama()
         self.p3_filter_set()
-        self.redirect()
-        self.tabel_sql()
 
     def tabel_sql(self):
         """Mengisi tabel dengan data dari Database"""
-        self.model = QSqlTableModel(self, Database().db)
+        db = Database().db
+        self.model = QSqlTableModel(self, db)
         self.model.setTable("Input User")
 
         self.ui.p32_07_tabelhasil.setItemDelegateForColumn(3, GantiTanggal())
         self.ui.p32_07_tabelhasil.setItemDelegateForColumn(4, GantiTanggal())
+
+        self.ui.p32_07_tabelhasil.setItemDelegateForColumn(6, ExpireDelegate())
 
         self.model.select()
 
@@ -84,7 +152,7 @@ class MainWindow(QMainWindow):
 
     def p2_iterasi_nama(self):
         """Memasukkan nama makanan ke dalam Combo Box"""
-        query = QSqlQuery("SELECT `Nama` from `Input User`; ")
+        query = QSqlQuery("SELECT `Nama` FROM `Input User`;")
 
         while query.next():
             self.ui.p22_02_combonama.addItem(query.value(0))
@@ -122,7 +190,7 @@ class MainWindow(QMainWindow):
                 f"`Tanggal Kedaluwarsa` BETWEEN '{awal_bulan}'"
                 f" AND '{akhir_bulan}'")
 
-        elif self.ui.p32_06_radiosemua.isChecked():
+        else:
             pass
 
         self.model.setFilter(" AND ".join(lst_query))
@@ -181,6 +249,16 @@ class MainWindow(QMainWindow):
         self.ui.side_input.setStyleSheet(on if index == 0 else off)
         self.ui.side_transaksi.setStyleSheet(on if index == 1 else off)
         self.ui.side_laporan.setStyleSheet(on if index == 2 else off)
+
+    def reload_data(self):
+        if self.model:
+            self.model.select()
+            self.ui.p22_02_combonama.clear()
+            self.p2_iterasi_nama()
+            self.p3_filter()
+
+        else:
+            pass
 
 
 if __name__ == "__main__":
