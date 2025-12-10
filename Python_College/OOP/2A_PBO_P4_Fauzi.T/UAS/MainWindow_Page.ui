@@ -94,7 +94,7 @@
            <item>
             <widget class="QLineEdit" name="p13b_lenama">
              <property name="styleSheet">
-              <string notr="true"/>
+              <string notr="true">border: 1px solid lightgray; border-radius: 5px;</string>
              </property>
              <property name="placeholderText">
               <string>Contoh: Daging Sapi</string>
@@ -107,7 +107,7 @@
         <item row="3" column="1">
          <widget class="QFrame" name="p15_lykategori">
           <property name="styleSheet">
-           <string notr="true">QLabel { font-size: 12pt; font-family: Inter, sans-serif; margin-bottom: 5px; } QRadioButton { border: 1px solid; border-color: lightgray; border-radius: 5px; font-size: 12pt; font-family: Helvetica, Inter, Sans-serif; margin: 5px; padding: 10px; }</string>
+           <string notr="true">QLabel { font-size: 12pt; font-family: Inter, sans-serif; margin-bottom: 5px; } QRadioButton { border: 1px solid lightgray; border-radius: 5px; font-size: 12pt; font-family: Helvetica, Inter, Sans-serif; margin: 5px; padding: 10px; }</string>
           </property>
           <layout class="QGridLayout" name="layout4_grid">
            <property name="leftMargin">
@@ -219,7 +219,7 @@
         <item row="4" column="1">
          <widget class="QFrame" name="p16_tombol">
           <property name="styleSheet">
-           <string notr="true">QPushButton { border: 1px solid; border-color: hsl(210, 13%, 65%); border-radius: 5px; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; margin: 10px; padding: 10px; }</string>
+           <string notr="true"/>
           </property>
           <layout class="QHBoxLayout" name="layout5_horizontal">
            <property name="leftMargin">
@@ -256,7 +256,7 @@
               <cursorShape>PointingHandCursor</cursorShape>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton#tombol_simpan { background-color: hsl(210, 31%, 80%); } QPushButton#tombol_simpan:hover { background-color: hsl(210, 31%, 90%); }</string>
+              <string notr="true">QPushButton { background-color: hsl(210, 31%, 80%); border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; margin: 10px; padding: 10px; } QPushButton:hover { background-color: hsl(210, 31%, 90%); }</string>
              </property>
              <property name="text">
               <string>Simpan</string>
@@ -285,7 +285,7 @@
         <item row="2" column="1">
          <widget class="QFrame" name="p14_lyinput">
           <property name="styleSheet">
-           <string notr="true">QLabel { font-size: 12pt; font-family: Helvetica, Inter, sans-serif; } QSpinBox,QComboBox,QDateEdit { font-size: 12pt; padding: 10px; }</string>
+           <string notr="true">QLabel { font-size: 12pt; font-family: Helvetica, Inter, sans-serif; } QSpinBox,QComboBox,QDateEdit { font-size: 12pt; padding: 10px; } QDateEdit { border: 1px solid lightgray; border-radius: 5px; } QDateEdit::drop-down { border: 1px solid lightgray; border-radius: 0px 5px 5px 0px; } QDateEdit::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; } QCalendarWidget { font-size: 12pt; font-family: Helvetica, Inter, sans-serif; }</string>
           </property>
           <layout class="QGridLayout" name="layout3_grid" columnstretch="1,1">
            <property name="leftMargin">
@@ -352,7 +352,7 @@
               <cursorShape>PointingHandCursor</cursorShape>
              </property>
              <property name="styleSheet">
-              <string notr="true"/>
+              <string notr="true">QComboBox { border: 1px solid lightgray; border-radius: 5px;} QComboBox::drop-down { border: 1px solid lightgray; border-radius: 0px 5px 5px 0px; } QComboBox::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; }</string>
              </property>
              <item>
               <property name="text">
@@ -383,6 +383,9 @@
            </item>
            <item row="3" column="0">
             <widget class="QDateEdit" name="p14f_detanggal">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
              <property name="styleSheet">
               <string notr="true"/>
              </property>
@@ -426,6 +429,9 @@
            </item>
            <item row="3" column="1">
             <widget class="QDateEdit" name="p14h_deeexpire">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
              <property name="styleSheet">
               <string notr="true"/>
              </property>
@@ -459,6 +465,9 @@
            </item>
            <item row="1" column="0">
             <widget class="QSpinBox" name="p14b_spjumlah">
+             <property name="styleSheet">
+              <string notr="true">QSpinBox { border: 1px solid lightgray; border-radius: 5px; } QSpinBox::up-button, QSpinBox::down-button { border: 1px solid LightGray; border-radius: 0px 5px 5px 0px; } QSpinBox::up-arrow { image: url(&quot;Assets/caret-up&quot;); width: 8px; height: 8px; } QSpinBox::down-arrow { image: url(&quot;Assets/caret-down&quot;); width: 8px; height: 8px; }</string>
+             </property>
              <property name="maximum">
               <number>1000000</number>
              </property>
@@ -492,7 +501,7 @@
            </sizepolicy>
           </property>
           <property name="styleSheet">
-           <string notr="true">QFrame#p22_lytransaksi { border: 1px solid; border-color: lightgray; border-radius: 5px; } QLabel { font-family: Helvetica, Inter, sans-serif; font-size: 12pt; } QComboBox,QSpinBox,QDateEdit { font-family: Helvetica, Inter, sans-serif; font-size: 12pt; padding: 10px; } QRadioButton { border: 1px solid; border-color: LightGray; border-radius: 10px; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; padding: 10px 10px 10px 10px; }</string>
+           <string notr="true">QFrame#p22_lytransaksi { border: 1px solid lightgray; border-radius: 5px; } QLabel { font-family: Helvetica, Inter, sans-serif; font-size: 12pt; } QComboBox,QSpinBox,QDateEdit { font-family: Helvetica, Inter, sans-serif; font-size: 12pt; padding: 10px; } QRadioButton { border: 1px solid lightgray; border-radius: 10px; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; padding: 10px 10px 10px 10px; }</string>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_3">
            <property name="leftMargin">
@@ -520,7 +529,7 @@
               <item>
                <widget class="QComboBox" name="p22ab_cbnama">
                 <property name="styleSheet">
-                 <string notr="true">QComboBox { border: 1px solid; border-color: LightGray; border-radius: 5px;} QComboBox::drop-down { border: 1px solid; border-color: LightGray; border-radius: 5px; } QComboBox::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; }</string>
+                 <string notr="true">QComboBox { border: 1px solid; border-color: LightGray; border-radius: 5px;} QComboBox::drop-down { border: 1px solid; border-color: LightGray; border-radius: 0px 5px 5px 0px; } QComboBox::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; }</string>
                 </property>
                </widget>
               </item>
@@ -598,14 +607,14 @@
               <item row="1" column="0">
                <widget class="QSpinBox" name="p22cb_spjumlah">
                 <property name="styleSheet">
-                 <string notr="true"/>
+                 <string notr="true">QSpinBox { border: 1px solid lightgray; border-radius: 5px; } QSpinBox::up-button, QSpinBox::down-button { border: 1px solid LightGray; border-radius: 0px 5px 5px 0px; } QSpinBox::up-arrow { image: url(&quot;Assets/caret-up&quot;); width: 8px; height: 8px; } QSpinBox::down-arrow { image: url(&quot;Assets/caret-down&quot;); width: 8px; height: 8px; }</string>
                 </property>
                </widget>
               </item>
               <item row="1" column="1">
                <widget class="QDateEdit" name="p22cd_detanggal">
                 <property name="styleSheet">
-                 <string notr="true"/>
+                 <string notr="true">QLabel { font-size: 12pt; font-family: Helvetica, Inter, sans-serif; } QSpinBox,QComboBox,QDateEdit { font-size: 12pt; padding: 10px; } QDateEdit { border: 1px solid lightgray; border-radius: 5px; } QDateEdit::drop-down { border: 1px solid lightgray; border-radius: 0px 5px 5px 0px; } QDateEdit::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; } QCalendarWidget { font-size: 12pt; font-family: Helvetica, Inter, sans-serif; }</string>
                 </property>
                 <property name="readOnly">
                  <bool>true</bool>
@@ -624,24 +633,27 @@
            <item>
             <widget class="QFrame" name="p22d_lytombol">
              <property name="styleSheet">
-              <string notr="true">QPushButton { background-color: hsl(210, 31%, 80%); border: 1px solid; border-color: hsl(210, 31%, 80%); border-radius: 5px; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; padding: 10px; } QPushButton:hover { background-color: hsl(210, 31%, 90%); }</string>
+              <string notr="true">QPushButton { background-color: hsl(210, 31%, 80%); border: 1px solid hsl(210, 31%, 80%); border-radius: 5px; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; padding: 10px; } QPushButton:hover { background-color: hsl(210, 31%, 90%); }</string>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_5">
               <property name="spacing">
                <number>12</number>
               </property>
               <item>
-               <widget class="QPushButton" name="p22da_btnreset">
-                <property name="cursor">
-                 <cursorShape>PointingHandCursor</cursorShape>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Horizontal</enum>
                 </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Fixed</enum>
                 </property>
-                <property name="text">
-                 <string>Reset Form</string>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>120</width>
+                  <height>20</height>
+                 </size>
                 </property>
-               </widget>
+               </spacer>
               </item>
               <item>
                <widget class="QPushButton" name="p22db_btnproses">
@@ -767,7 +779,7 @@
         <item row="1" column="0">
          <widget class="QFrame" name="p32_lyinfo">
           <property name="styleSheet">
-           <string notr="true">QFrame#p32_lyinfo { border: 1px solid; border-color: LightGray; border-radius: 5px; } QLabel,QComboBox,QRadioButton,QHeaderView,QTableView { font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; } QLabel { padding: 5px 0px 5px 0px; } QTableCornerButton { background-color: hsl(210, 13%, 65%); } QHeaderView { background-color: hsl(210, 13%, 65%); border: 1px solid; border-radius: 5px; }</string>
+           <string notr="true">QFrame#p32_lyinfo { border: 1px solid; border-color: LightGray; border-radius: 5px; } QLabel,QComboBox,QRadioButton,QHeaderView,QTableView { font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; } QLabel { padding: 5px 0px 5px 0px; } QTableCornerButton { background-color: hsl(210, 13%, 65%); } QHeaderView { background-color: hsl(210, 13%, 65%); border: 1px solid; border-radius: 5px; } QRadioButton { margin-left: 10px; }</string>
           </property>
           <layout class="QGridLayout" name="p32_info_g">
            <property name="leftMargin">
@@ -826,6 +838,9 @@
             <widget class="QComboBox" name="p32b_cbkategori">
              <property name="cursor">
               <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox { border: 1px solid lightgray; border-radius: 5px; padding: 5px; } QComboBox::drop-down { border: 1px solid lightgray; border-radius: 0px 5px 5px 0px; } QComboBox::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; }</string>
              </property>
              <item>
               <property name="text">
@@ -907,7 +922,7 @@
        </sizepolicy>
       </property>
       <property name="styleSheet">
-       <string notr="true">QFrame#base_sidebar { border: 1px solid; border-radius: 5px; border-color: LightGray; } QLabel { font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; font-weight: bold; padding: 10px 10px 10px 10px; } QPushButton { background-color: hsl(210, 31%, 80%); border: 1px solid; border-color: hsl(210, 31%, 80%); border-radius: 5px; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; padding: 10px; margin: 5px; text-align: justify; } QPushButton:hover { background-color: hsl(210, 31%, 90%); }</string>
+       <string notr="true">QFrame#base_sidebar { border: 1px solid lightgray; border-radius: 5px; } QLabel { font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; font-weight: bold; padding: 10px 10px 10px 10px; } QPushButton { background-color: hsl(210, 31%, 80%); border: 1px solid hsl(210, 31%, 80%); border-radius: 5px; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; padding: 10px; margin: 5px; text-align: justify; } QPushButton:hover { background-color: hsl(210, 31%, 90%); }</string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <property name="leftMargin">
