@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'MainWindow_PageDJBwRS.ui'
+## Form generated from reading UI file 'MainWindow_PageCUyUVp.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(638, 670)
+        MainWindow.resize(638, 685)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setStyleSheet(u"background-color: hsl(210, 40%, 98%);")
@@ -36,6 +36,7 @@ class Ui_MainWindow(object):
         self.pages.setObjectName(u"pages")
         self.page_1 = QWidget()
         self.page_1.setObjectName(u"page_1")
+        self.page_1.setStyleSheet(u"QWidget { color: black; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; }")
         self.gridLayout_3 = QGridLayout(self.page_1)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
         self.p12_lyheading = QFrame(self.page_1)
@@ -45,13 +46,13 @@ class Ui_MainWindow(object):
         self.layout1_grid.setContentsMargins(10, 10, 10, 10)
         self.lblheadsub = QLabel(self.p12_lyheading)
         self.lblheadsub.setObjectName(u"lblheadsub")
-        self.lblheadsub.setStyleSheet(u"color: #666; font-size: 16px;")
+        self.lblheadsub.setStyleSheet(u"QLabel#lblheadsub { color: #666; font-size: 16px; }")
 
         self.layout1_grid.addWidget(self.lblheadsub, 1, 0, 1, 1)
 
         self.lblhead = QLabel(self.p12_lyheading)
         self.lblhead.setObjectName(u"lblhead")
-        self.lblhead.setStyleSheet(u"font-size: 26px; font-weight: bold; font-family: Helvetica, Inter, Sans-serif;")
+        self.lblhead.setStyleSheet(u"QLabel#lblhead { font-size: 26px; font-weight: bold; }")
 
         self.layout1_grid.addWidget(self.lblhead, 0, 0, 1, 1)
 
@@ -60,7 +61,7 @@ class Ui_MainWindow(object):
 
         self.p13_lynama = QFrame(self.page_1)
         self.p13_lynama.setObjectName(u"p13_lynama")
-        self.p13_lynama.setStyleSheet(u"QLabel { font-size: 12pt; font-family: Inter, sans-serif; padding-bottom: 5px; } QLineEdit { padding: 10px; font-size: 12pt; }")
+        self.p13_lynama.setStyleSheet(u"QLabel { padding-bottom: 5px; } QLineEdit { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; padding: 10px; }")
         self.layout2_vertical = QVBoxLayout(self.p13_lynama)
         self.layout2_vertical.setObjectName(u"layout2_vertical")
         self.layout2_vertical.setContentsMargins(10, 10, 10, 10)
@@ -72,7 +73,7 @@ class Ui_MainWindow(object):
 
         self.p13b_lenama = QLineEdit(self.p13_lynama)
         self.p13b_lenama.setObjectName(u"p13b_lenama")
-        self.p13b_lenama.setStyleSheet(u"border: 1px solid lightgray; border-radius: 5px;")
+        self.p13b_lenama.setStyleSheet(u"")
 
         self.layout2_vertical.addWidget(self.p13b_lenama)
 
@@ -81,7 +82,7 @@ class Ui_MainWindow(object):
 
         self.p15_lykategori = QFrame(self.page_1)
         self.p15_lykategori.setObjectName(u"p15_lykategori")
-        self.p15_lykategori.setStyleSheet(u"QLabel { font-size: 12pt; font-family: Inter, sans-serif; margin-bottom: 5px; } QRadioButton { border: 1px solid lightgray; border-radius: 5px; font-size: 12pt; font-family: Helvetica, Inter, Sans-serif; margin: 5px; padding: 10px; }")
+        self.p15_lykategori.setStyleSheet(u"QLabel { margin-bottom: 5px; } QRadioButton { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; margin: 5px; padding: 10px; }")
         self.layout4_grid = QGridLayout(self.p15_lykategori)
         self.layout4_grid.setObjectName(u"layout4_grid")
         self.layout4_grid.setContentsMargins(10, 10, 10, 10)
@@ -150,7 +151,7 @@ class Ui_MainWindow(object):
         self.btnsimpan = QPushButton(self.p16_tombol)
         self.btnsimpan.setObjectName(u"btnsimpan")
         self.btnsimpan.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.btnsimpan.setStyleSheet(u"QPushButton { background-color: hsl(210, 31%, 80%); border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; margin: 10px; padding: 10px; } QPushButton:hover { background-color: hsl(210, 31%, 90%); }")
+        self.btnsimpan.setStyleSheet(u"QPushButton { background-color: hsl(210, 31%, 80%); border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; margin: 10px; padding: 10px; } QPushButton:hover { background-color: hsl(210, 31%, 90%); }")
 
         self.layout5_horizontal.addWidget(self.btnsimpan)
 
@@ -163,7 +164,9 @@ class Ui_MainWindow(object):
 
         self.p14_lyinput = QFrame(self.page_1)
         self.p14_lyinput.setObjectName(u"p14_lyinput")
-        self.p14_lyinput.setStyleSheet(u"QLabel { font-size: 12pt; font-family: Helvetica, Inter, sans-serif; } QSpinBox,QComboBox,QDateEdit { font-size: 12pt; padding: 10px; } QDateEdit { border: 1px solid lightgray; border-radius: 5px; } QDateEdit::drop-down { border: 1px solid lightgray; border-radius: 0px 5px 5px 0px; } QDateEdit::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; } QCalendarWidget { font-size: 12pt; font-family: Helvetica, Inter, sans-serif; }")
+        self.p14_lyinput.setStyleSheet(u"QSpinBox, QComboBox, QDateEdit { padding: 10px; } QDateEdit { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QDateEdit::drop-down { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QDateEdit::down-arrow { image: url(assets/caret-down.png); width: 8px; height: 8px; } QCalendarWidget { background-color: #2b2b2b; color: #f0f0f0; border-radius: 10px; padding: 8px; } QCalendarWidget QToolButton { color: #ffffff; background-color: #3c3f41; border: none; padding: 6px; border-radius: 6px; font-size: 14px; } QCalendarWidget QToolButton#qt_calendar_prevmonth, QCalendarWidget QToolButton#qt_calendar_nextmonth { width: 28px; height: 28px; border-radius: 6px; } QCalendarWidget QToolButton:hover { background-color: #505354; } QCalendarWidget QComboBox { background-color: #3c3f41; color: white; border-radius: 4px; padding: 3px; } QCalendarWidget QAbstractItemView:enabled { color: #ffffff; selection-background-color: #0078d7; selection-color: #ffffff; background-color: #2e2e2e; } QCalendarW"
+                        "idget QWidget#qt_calendar_calendarview QWidget { alternate-background-color: #353535; } QCalendarWidget QAbstractItemView::item:hover { background-color: #444444; color: white; }\n"
+"")
         self.layout3_grid = QGridLayout(self.p14_lyinput)
         self.layout3_grid.setObjectName(u"layout3_grid")
         self.layout3_grid.setHorizontalSpacing(10)
@@ -201,7 +204,7 @@ class Ui_MainWindow(object):
         self.p14d_cbsatuan.addItem("")
         self.p14d_cbsatuan.setObjectName(u"p14d_cbsatuan")
         self.p14d_cbsatuan.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.p14d_cbsatuan.setStyleSheet(u"QComboBox { border: 1px solid lightgray; border-radius: 5px;} QComboBox::drop-down { border: 1px solid lightgray; border-radius: 0px 5px 5px 0px; } QComboBox::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; }")
+        self.p14d_cbsatuan.setStyleSheet(u"QComboBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px;} QComboBox::drop-down { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QComboBox::down-arrow { image: url(assets/caret-down.png); width: 8px; height: 8px; }")
 
         self.layout3_grid.addWidget(self.p14d_cbsatuan, 1, 1, 1, 1)
 
@@ -231,7 +234,7 @@ class Ui_MainWindow(object):
 
         self.p14b_spjumlah = QSpinBox(self.p14_lyinput)
         self.p14b_spjumlah.setObjectName(u"p14b_spjumlah")
-        self.p14b_spjumlah.setStyleSheet(u"QSpinBox { border: 1px solid lightgray; border-radius: 5px; } QSpinBox::up-button, QSpinBox::down-button { border: 1px solid LightGray; border-radius: 0px 5px 5px 0px; } QSpinBox::up-arrow { image: url(\"Assets/caret-up\"); width: 8px; height: 8px; } QSpinBox::down-arrow { image: url(\"Assets/caret-down\"); width: 8px; height: 8px; }")
+        self.p14b_spjumlah.setStyleSheet(u"QSpinBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QSpinBox::up-button, QSpinBox::down-button { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QSpinBox::up-arrow { image: url(assets/caret-up); width: 8px; height: 8px; } QSpinBox::down-arrow { image: url(assets/caret-down); width: 8px; height: 8px; }")
         self.p14b_spjumlah.setMaximum(1000000)
 
         self.layout3_grid.addWidget(self.p14b_spjumlah, 1, 0, 1, 1)
@@ -244,6 +247,7 @@ class Ui_MainWindow(object):
         self.pages.addWidget(self.page_1)
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
+        self.page_2.setStyleSheet(u"QWidget { color: black; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; }")
         self.gridLayout_4 = QGridLayout(self.page_2)
         self.gridLayout_4.setObjectName(u"gridLayout_4")
         self.gridLayout_4.setContentsMargins(10, 10, 10, 10)
@@ -254,7 +258,7 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.p22_lytransaksi.sizePolicy().hasHeightForWidth())
         self.p22_lytransaksi.setSizePolicy(sizePolicy)
-        self.p22_lytransaksi.setStyleSheet(u"QFrame#p22_lytransaksi { border: 1px solid lightgray; border-radius: 5px; } QLabel { font-family: Helvetica, Inter, sans-serif; font-size: 12pt; } QComboBox,QSpinBox,QDateEdit { font-family: Helvetica, Inter, sans-serif; font-size: 12pt; padding: 10px; } QRadioButton { border: 1px solid lightgray; border-radius: 10px; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; padding: 10px 10px 10px 10px; }")
+        self.p22_lytransaksi.setStyleSheet(u"QFrame#p22_lytransaksi { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QComboBox, QSpinBox, QDateEdit { padding: 10px; } QRadioButton { border: 1px solid hsl(210, 13%, 65%); border-radius: 10px; padding: 10px 10px 10px 10px; }")
         self.verticalLayout_3 = QVBoxLayout(self.p22_lytransaksi)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(10, 10, 10, 10)
@@ -269,7 +273,7 @@ class Ui_MainWindow(object):
 
         self.p22ab_cbnama = QComboBox(self.p22a_lynama)
         self.p22ab_cbnama.setObjectName(u"p22ab_cbnama")
-        self.p22ab_cbnama.setStyleSheet(u"QComboBox { border: 1px solid; border-color: LightGray; border-radius: 5px;} QComboBox::drop-down { border: 1px solid; border-color: LightGray; border-radius: 0px 5px 5px 0px; } QComboBox::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; }")
+        self.p22ab_cbnama.setStyleSheet(u"QComboBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px;} QComboBox::drop-down { border: 1px solidhsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QComboBox::down-arrow { image: url(assets/caret-down.png); width: 8px; height: 8px; }")
 
         self.lyp22a_nama.addWidget(self.p22ab_cbnama)
 
@@ -322,13 +326,14 @@ class Ui_MainWindow(object):
 
         self.p22cb_spjumlah = QSpinBox(self.p22c_lynominal)
         self.p22cb_spjumlah.setObjectName(u"p22cb_spjumlah")
-        self.p22cb_spjumlah.setStyleSheet(u"QSpinBox { border: 1px solid lightgray; border-radius: 5px; } QSpinBox::up-button, QSpinBox::down-button { border: 1px solid LightGray; border-radius: 0px 5px 5px 0px; } QSpinBox::up-arrow { image: url(\"Assets/caret-up\"); width: 8px; height: 8px; } QSpinBox::down-arrow { image: url(\"Assets/caret-down\"); width: 8px; height: 8px; }")
+        self.p22cb_spjumlah.setStyleSheet(u"QSpinBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QSpinBox::up-button, QSpinBox::down-button { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QSpinBox::up-arrow { image: url(assets/caret-up); width: 8px; height: 8px; } QSpinBox::down-arrow { image: url(assets/caret-down); width: 8px; height: 8px; }")
 
         self.gridLayout_15.addWidget(self.p22cb_spjumlah, 1, 0, 1, 1)
 
         self.p22cd_detanggal = QDateEdit(self.p22c_lynominal)
         self.p22cd_detanggal.setObjectName(u"p22cd_detanggal")
-        self.p22cd_detanggal.setStyleSheet(u"QLabel { font-size: 12pt; font-family: Helvetica, Inter, sans-serif; } QSpinBox,QComboBox,QDateEdit { font-size: 12pt; padding: 10px; } QDateEdit { border: 1px solid lightgray; border-radius: 5px; } QDateEdit::drop-down { border: 1px solid lightgray; border-radius: 0px 5px 5px 0px; } QDateEdit::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; } QCalendarWidget { font-size: 12pt; font-family: Helvetica, Inter, sans-serif; }")
+        self.p22cd_detanggal.setStyleSheet(u"QSpinBox, QComboBox, QDateEdit { padding: 10px; } QDateEdit { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QDateEdit::drop-down { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QDateEdit::down-arrow { image: url(assets/caret-down.png); width: 8px; height: 8px; }")
+        self.p22cd_detanggal.setLocale(QLocale(QLocale.Indonesian, QLocale.Indonesia))
         self.p22cd_detanggal.setReadOnly(True)
         self.p22cd_detanggal.setCalendarPopup(True)
 
@@ -341,11 +346,11 @@ class Ui_MainWindow(object):
 
         self.p22d_lytombol = QFrame(self.p22_lytransaksi)
         self.p22d_lytombol.setObjectName(u"p22d_lytombol")
-        self.p22d_lytombol.setStyleSheet(u"QPushButton { background-color: hsl(210, 31%, 80%); border: 1px solid hsl(210, 31%, 80%); border-radius: 5px; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; padding: 10px; } QPushButton:hover { background-color: hsl(210, 31%, 90%); }")
+        self.p22d_lytombol.setStyleSheet(u"QPushButton { background-color: hsl(210, 31%, 80%); border: 1px solid hsl(210, 31%, 80%); border-radius: 5px; padding: 10px; } QPushButton:hover { background-color: hsl(210, 31%, 90%); }")
         self.horizontalLayout_5 = QHBoxLayout(self.p22d_lytombol)
         self.horizontalLayout_5.setSpacing(12)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
-        self.horizontalSpacer = QSpacerItem(120, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
+        self.horizontalSpacer = QSpacerItem(60, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.horizontalLayout_5.addItem(self.horizontalSpacer)
 
@@ -355,6 +360,10 @@ class Ui_MainWindow(object):
         self.p22db_btnproses.setStyleSheet(u"")
 
         self.horizontalLayout_5.addWidget(self.p22db_btnproses)
+
+        self.horizontalSpacer_2 = QSpacerItem(60, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer_2)
 
 
         self.verticalLayout_3.addWidget(self.p22d_lytombol)
@@ -379,7 +388,7 @@ class Ui_MainWindow(object):
         sizePolicy2.setVerticalStretch(0)
         sizePolicy2.setHeightForWidth(self.p21a_head.sizePolicy().hasHeightForWidth())
         self.p21a_head.setSizePolicy(sizePolicy2)
-        self.p21a_head.setStyleSheet(u"font-size: 26px; font-weight: bold; font-family: Helvetica, Inter, Sans-serif;")
+        self.p21a_head.setStyleSheet(u"QLabel#p21a_head { font-size: 26px; font-weight: bold; font-family: Helvetica, Inter, Sans-serif; }")
 
         self.verticalLayout_5.addWidget(self.p21a_head)
 
@@ -387,7 +396,7 @@ class Ui_MainWindow(object):
         self.p21a_headsub.setObjectName(u"p21a_headsub")
         sizePolicy2.setHeightForWidth(self.p21a_headsub.sizePolicy().hasHeightForWidth())
         self.p21a_headsub.setSizePolicy(sizePolicy2)
-        self.p21a_headsub.setStyleSheet(u"color: #666; font-size: 16px;")
+        self.p21a_headsub.setStyleSheet(u"QLabel#p21a_headsub { color: #666; font-size: 16px; }")
 
         self.verticalLayout_5.addWidget(self.p21a_headsub)
 
@@ -401,6 +410,7 @@ class Ui_MainWindow(object):
         self.pages.addWidget(self.page_2)
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
+        self.page_3.setStyleSheet(u"QWidget { color: black; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; }")
         self.gridLayout_8 = QGridLayout(self.page_3)
         self.gridLayout_8.setObjectName(u"gridLayout_8")
         self.p31_lyheader = QFrame(self.page_3)
@@ -409,13 +419,13 @@ class Ui_MainWindow(object):
         self.p31_header_v.setObjectName(u"p31_header_v")
         self.p31_head = QLabel(self.p31_lyheader)
         self.p31_head.setObjectName(u"p31_head")
-        self.p31_head.setStyleSheet(u"font-family: Helvetica, Inter, Sans-serif; font-size: 26px; font-weight: bold; padding: 5px 10px 5px 0px;")
+        self.p31_head.setStyleSheet(u"QLabel#p31_head { font-size: 26px; font-weight: bold; padding: 5px 10px 5px 0px; }")
 
         self.p31_header_v.addWidget(self.p31_head)
 
         self.p31_headsub = QLabel(self.p31_lyheader)
         self.p31_headsub.setObjectName(u"p31_headsub")
-        self.p31_headsub.setStyleSheet(u"font-family: Helvetica, Inter, Sans-serif; font-size: 16px; color: gray; padding: 5px 10px 5px 0px;")
+        self.p31_headsub.setStyleSheet(u"QLabel#p31_headsub { font-size: 16px; color: gray; padding: 5px 10px 5px 0px; }")
 
         self.p31_header_v.addWidget(self.p31_headsub)
 
@@ -424,7 +434,7 @@ class Ui_MainWindow(object):
 
         self.p32_lyinfo = QFrame(self.page_3)
         self.p32_lyinfo.setObjectName(u"p32_lyinfo")
-        self.p32_lyinfo.setStyleSheet(u"QFrame#p32_lyinfo { border: 1px solid; border-color: LightGray; border-radius: 5px; } QLabel,QComboBox,QRadioButton,QHeaderView,QTableView { font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; } QLabel { padding: 5px 0px 5px 0px; } QTableCornerButton { background-color: hsl(210, 13%, 65%); } QHeaderView { background-color: hsl(210, 13%, 65%); border: 1px solid; border-radius: 5px; } QRadioButton { margin-left: 10px; }")
+        self.p32_lyinfo.setStyleSheet(u"QFrame#p32_lyinfo { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QLabel { padding: 5px 0px 5px 0px; } QTableCornerButton { background-color: hsl(210, 13%, 65%); } QRadioButton { margin-left: 10px; }")
         self.p32_info_g = QGridLayout(self.p32_lyinfo)
         self.p32_info_g.setObjectName(u"p32_info_g")
         self.p32_info_g.setContentsMargins(10, 10, 10, 10)
@@ -448,7 +458,9 @@ class Ui_MainWindow(object):
 
         self.p32h_tbhasil = QTableView(self.p32_lyinfo)
         self.p32h_tbhasil.setObjectName(u"p32h_tbhasil")
+        self.p32h_tbhasil.setStyleSheet(u"QHeaderView { background-color: hsl(210, 13%, 65%); border: 1px solid hsl(210, 13%, 65%);; border-radius: 5px; } QTableView { background-color: hsl(210, 31%, 80%); border: 1px solid hsl(210, 13%, 65%);; border-radius: 5px; }")
         self.p32h_tbhasil.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
+        self.p32h_tbhasil.horizontalHeader().setStretchLastSection(True)
         self.p32h_tbhasil.verticalHeader().setVisible(False)
 
         self.p32_info_g.addWidget(self.p32h_tbhasil, 2, 0, 1, 4)
@@ -463,7 +475,7 @@ class Ui_MainWindow(object):
         self.p32b_cbkategori.addItem("")
         self.p32b_cbkategori.setObjectName(u"p32b_cbkategori")
         self.p32b_cbkategori.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.p32b_cbkategori.setStyleSheet(u"QComboBox { border: 1px solid lightgray; border-radius: 5px; padding: 5px; } QComboBox::drop-down { border: 1px solid lightgray; border-radius: 0px 5px 5px 0px; } QComboBox::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; }")
+        self.p32b_cbkategori.setStyleSheet(u"QComboBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; padding: 5px; } QComboBox::drop-down { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QComboBox::down-arrow { image: url(assets/caret-down.png); width: 8px; height: 8px; }")
 
         self.p32_info_g.addWidget(self.p32b_cbkategori, 1, 0, 1, 1)
 
@@ -480,7 +492,7 @@ class Ui_MainWindow(object):
 
         self.p32i_chkedit = QCheckBox(self.p32_lyinfo)
         self.p32i_chkedit.setObjectName(u"p32i_chkedit")
-        self.p32i_chkedit.setStyleSheet(u"QCheckBox { border: 1px solid; border-color: LightGray; border-radius: 5px; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; padding: 3px 5px 3px 5px; }")
+        self.p32i_chkedit.setStyleSheet(u"QCheckBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; padding: 3px 5px 3px 5px; }")
 
         self.p32_info_g.addWidget(self.p32i_chkedit, 0, 3, 1, 1)
 
@@ -498,7 +510,35 @@ class Ui_MainWindow(object):
         sizePolicy3.setVerticalStretch(0)
         sizePolicy3.setHeightForWidth(self.base_sidebar.sizePolicy().hasHeightForWidth())
         self.base_sidebar.setSizePolicy(sizePolicy3)
-        self.base_sidebar.setStyleSheet(u"QFrame#base_sidebar { border: 1px solid lightgray; border-radius: 5px; } QLabel { font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; font-weight: bold; padding: 10px 10px 10px 10px; } QPushButton { background-color: hsl(210, 31%, 80%); border: 1px solid hsl(210, 31%, 80%); border-radius: 5px; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; padding: 10px; margin: 5px; text-align: justify; } QPushButton:hover { background-color: hsl(210, 31%, 90%); }")
+        self.base_sidebar.setStyleSheet(u"\n"
+"QFrame#base_sidebar {\n"
+"    border: 1px solid hsl(210, 13%, 65%);\n"
+"    border-radius: 5px;\n"
+"}\n"
+"\n"
+"QLabel {\n"
+"    color: black;\n"
+"    font-family: Helvetica, Inter, Sans-serif;\n"
+"    font-size: 12pt;\n"
+"    font-weight: bold;\n"
+"    padding: 10px 10px 10px 10px;\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"    background-color: hsl(210, 31%, 80%);\n"
+"    border: 1px solid hsl(210, 31%, 80%);\n"
+"    border-radius: 5px;\n"
+"    color:black;\n"
+"    font-family: Helvetica, Inter, Sans-serif;\n"
+"    font-size: 12pt;\n"
+"    padding: 10px;\n"
+"    margin: 5px;\n"
+"    text-align: justify;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: hsl(210, 31%, 90%);\n"
+"}")
         self.verticalLayout = QVBoxLayout(self.base_sidebar)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(8, 8, 8, 8)
@@ -512,7 +552,7 @@ class Ui_MainWindow(object):
         self.label_profil.setObjectName(u"label_profil")
         self.label_profil.setMaximumSize(QSize(32, 32))
         self.label_profil.setStyleSheet(u"margin: 0px 0px 0px 0px; padding: 0px 2px 0px 0px;")
-        self.label_profil.setPixmap(QPixmap(u"Assets/user.png"))
+        self.label_profil.setPixmap(QPixmap(u"assets/user.png"))
         self.label_profil.setScaledContents(True)
 
         self.horizontalLayout.addWidget(self.label_profil)
@@ -531,7 +571,7 @@ class Ui_MainWindow(object):
         self.side_input.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.side_input.setStyleSheet(u"")
         icon = QIcon()
-        icon.addFile(u"Assets/input.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon.addFile(u"assets/input.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.side_input.setIcon(icon)
 
         self.verticalLayout.addWidget(self.side_input)
@@ -541,7 +581,7 @@ class Ui_MainWindow(object):
         self.side_transaksi.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.side_transaksi.setStyleSheet(u"")
         icon1 = QIcon()
-        icon1.addFile(u"Assets/transaction.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon1.addFile(u"assets/transaction.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.side_transaksi.setIcon(icon1)
 
         self.verticalLayout.addWidget(self.side_transaksi)
@@ -551,7 +591,7 @@ class Ui_MainWindow(object):
         self.side_laporan.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.side_laporan.setStyleSheet(u"")
         icon2 = QIcon()
-        icon2.addFile(u"Assets/report.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon2.addFile(u"assets/report.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.side_laporan.setIcon(icon2)
 
         self.verticalLayout.addWidget(self.side_laporan)
@@ -597,15 +637,15 @@ class Ui_MainWindow(object):
         self.p14d_cbsatuan.setItemText(3, QCoreApplication.translate("MainWindow", u"ml", None))
         self.p14d_cbsatuan.setItemText(4, QCoreApplication.translate("MainWindow", u"liter", None))
 
-        self.p14f_detanggal.setDisplayFormat(QCoreApplication.translate("MainWindow", u"yyyy/MM/dd", None))
-        self.p14h_deeexpire.setDisplayFormat(QCoreApplication.translate("MainWindow", u"yyyy/MM/dd", None))
+        self.p14f_detanggal.setDisplayFormat(QCoreApplication.translate("MainWindow", u"yyyy MMMM dd", None))
+        self.p14h_deeexpire.setDisplayFormat(QCoreApplication.translate("MainWindow", u"yyyy MMMM dd", None))
         self.p22aa_lblnama.setText(QCoreApplication.translate("MainWindow", u"Nama Bahan Makanan", None))
         self.p22bb_rbkeluar.setText(QCoreApplication.translate("MainWindow", u"Keluar", None))
         self.p22bc_rbmasuk.setText(QCoreApplication.translate("MainWindow", u"Masuk", None))
         self.p22ba_lbltransaksi.setText(QCoreApplication.translate("MainWindow", u"Jenis Transaksi", None))
         self.p22cc_lbltanggal.setText(QCoreApplication.translate("MainWindow", u"Tanggal Transaksi", None))
         self.p22ca_cajumlah.setText(QCoreApplication.translate("MainWindow", u"Jumlah Transaksi", None))
-        self.p22cd_detanggal.setDisplayFormat(QCoreApplication.translate("MainWindow", u"yyyy/MM/dd", None))
+        self.p22cd_detanggal.setDisplayFormat(QCoreApplication.translate("MainWindow", u"yyyy MMMM dd", None))
         self.p22db_btnproses.setText(QCoreApplication.translate("MainWindow", u"Proses Transaksi", None))
         self.p21a_head.setText(QCoreApplication.translate("MainWindow", u"Transaksi Bahan Makanan Baru", None))
         self.p21a_headsub.setText(QCoreApplication.translate("MainWindow", u"Isi form di bawah untuk mencatat bahan makanan", None))
