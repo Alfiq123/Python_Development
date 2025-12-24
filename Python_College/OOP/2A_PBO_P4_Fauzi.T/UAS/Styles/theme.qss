@@ -1,0 +1,172 @@
+/* ========== UNIVERSAL ========== */
+
+QLabel {
+    color: black;
+    font-family: Helvetica, Inter, Sans-serif;
+    font-size: 12pt;
+}
+
+QPushButton {
+    color: black;
+    font-family: Helvetica, Inter, Sans-serif;
+    font-size: 12pt;
+}
+
+QWidget {
+    color: black;
+    font-family: Helvetica, Inter, Sans-serif;
+    font-size: 12pt;
+}
+
+/* ========== SIDEBAR ========== */
+
+QFrame#base_sidebar {
+    border: 1px solid hsl(210, 13%, 65%);
+    border-radius: 5px;
+}
+
+QLabel#label_profil {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 2px 0px 0px;
+}
+
+QLabel#label_profilnama {
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 2px;
+}
+
+QPushButton#side_input,
+QPushButton#side_laporan,
+QPushButton#side_transaksi {
+    background-color: hsl(210, 31%, 80%);
+    border: 1px solid hsl(210, 31%, 80%);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    text-align: justify;
+}
+
+QPushButton#side_input:hover,
+QPushButton#side_laporan:hover,
+QPushButton#side_transaksi:hover {
+    background-color: hsl(210, 31%, 90%);
+}
+
+/* ========== PAGE 1 ========== */
+
+QLabel#lblhead {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+QLabel#lblheadsub {
+    color: #666;
+    font-size: 16px;
+}
+
+QLabel#p13a_lblnama {
+    padding-bottom: 5px;
+}
+
+QLineEdit#p13b_lenama {
+    border: 1px solid hsl(210, 13%, 65%);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+QSpinBox#p14b_spjumlah,
+QComboBox#p14d_cbsatuan,
+QDateEdit#p14f_detanggal,
+QDateEdit#p14h_deeexpire {
+    padding: 10px;
+}
+
+QDateEdit#p14f_detanggal,
+QDateEdit#p14h_deeexpire {
+    border: 1px solid hsl(210, 13%, 65%);
+    border-radius: 5px;
+}
+
+QDateEdit::drop-down {
+    border: 1px solid hsl(210, 13%, 65%);
+    border-radius: 0px 5px 5px 0px;
+}
+
+QDateEdit::down-arrow {
+    image: url(assets/caret-down.png);
+    width: 8px; height: 8px;
+}
+
+QCalendarWidget {
+    background-color: #2b2b2b;
+    color: #f0f0f0;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+QCalendarWidget QToolButton {
+    color: #ffffff;
+    background-color: #3c3f41;
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+QCalendarWidget QToolButton#qt_calendar_prevmonth,
+QCalendarWidget QToolButton#qt_calendar_nextmonth {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+}
+
+QCalendarWidget QToolButton:hover {
+    background-color: #505354;
+}
+
+QCalendarWidget QComboBox {
+    background-color: #3c3f41;
+    color: white;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+QCalendarWidget QAbstractItemView:enabled {
+    color: #ffffff;
+    selection-background-color: #0078d7;
+    selection-color: #ffffff;
+    background-color: #2e2e2e;
+}
+
+QCalendarWidget QWidget#qt_calendar_calendarview QWidget {
+    alternate-background-color: #353535;
+}
+
+QCalendarWidget QAbstractItemView::item:hover {
+    background-color: #444444;
+    color: white;
+}
+
+QFrame#p15_lykategori QLabel {
+    margin-bottom: 5px;
+}
+
+QFrame#p15_lykategori QRadioButton {
+    border: 1px solid hsl(210, 13%, 65%);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+QFrame#p16_tombol QPushButton#btnsimpan {
+    background-color: hsl(210, 31%, 80%);
+    border: 1px solid hsl(210, 13%, 65%);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+QPushButton#btnsimpan:hover {
+    background-color: hsl(210, 31%, 90%);
+}

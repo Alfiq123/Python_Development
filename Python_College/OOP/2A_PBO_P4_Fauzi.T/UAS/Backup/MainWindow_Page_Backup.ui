@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>603</width>
-    <height>522</height>
+    <width>637</width>
+    <height>723</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,153 +15,9 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">background-color: hsl(210, 40%, 98%);</string>
+    <string notr="true">background-color: #E3E3E3;</string>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QFrame" name="base_sidebar">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <property name="leftMargin">
-        <number>8</number>
-       </property>
-       <property name="topMargin">
-        <number>8</number>
-       </property>
-       <property name="rightMargin">
-        <number>8</number>
-       </property>
-       <property name="bottomMargin">
-        <number>8</number>
-       </property>
-       <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
-        <widget class="QFrame" name="foto_profil">
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <property name="spacing">
-           <number>0</number>
-          </property>
-          <property name="leftMargin">
-           <number>0</number>
-          </property>
-          <property name="topMargin">
-           <number>0</number>
-          </property>
-          <property name="rightMargin">
-           <number>0</number>
-          </property>
-          <property name="bottomMargin">
-           <number>0</number>
-          </property>
-          <item>
-           <widget class="QLabel" name="label_profil">
-            <property name="maximumSize">
-             <size>
-              <width>32</width>
-              <height>32</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="pixmap">
-             <pixmap>assets/user.png</pixmap>
-            </property>
-            <property name="scaledContents">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
-           <widget class="QLabel" name="label_profilnama">
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="text">
-             <string>Profil</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="side_input">
-         <property name="cursor">
-          <cursorShape>PointingHandCursor</cursorShape>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="text">
-          <string>Input</string>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>assets/input.png</normaloff>assets/input.png</iconset>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="side_transaksi">
-         <property name="cursor">
-          <cursorShape>PointingHandCursor</cursorShape>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="text">
-          <string>Transaksi</string>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>assets/transaction.png</normaloff>assets/transaction.png</iconset>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="side_laporan">
-         <property name="cursor">
-          <cursorShape>PointingHandCursor</cursorShape>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="text">
-          <string>Laporan</string>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>assets/report.png</normaloff>assets/report.png</iconset>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="vspacer1">
-         <property name="orientation">
-          <enum>Qt::Orientation::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-      </layout>
-     </widget>
-    </item>
     <item row="0" column="1">
      <widget class="QStackedWidget" name="pages">
       <property name="currentIndex">
@@ -169,11 +25,14 @@
       </property>
       <widget class="QWidget" name="page_1">
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QWidget { color: #375368; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; }</string>
        </property>
        <layout class="QGridLayout" name="gridLayout_3">
         <item row="0" column="1">
          <widget class="QFrame" name="p12_lyheading">
+          <property name="styleSheet">
+           <string notr="true">QFrame { background-color: #1B3C53; border-radius: 5px; } QLabel#lblhead { color: white; font-size: 26px; font-weight: bold; margin: 5px 5px 0px 5px; } QLabel#lblheadsub { color: white; font-size: 16px; margin: 0px 5px 5px 5px; }</string>
+          </property>
           <layout class="QGridLayout" name="layout1_grid">
            <property name="leftMargin">
             <number>10</number>
@@ -213,7 +72,7 @@
         <item row="1" column="1">
          <widget class="QFrame" name="p13_lynama">
           <property name="styleSheet">
-           <string notr="true"/>
+           <string notr="true">QLabel { color: #1B3C53; font-weight: bold; padding-bottom: 5px; } QLineEdit { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; padding: 10px; }</string>
           </property>
           <layout class="QVBoxLayout" name="layout2_vertical">
            <property name="leftMargin">
@@ -254,7 +113,7 @@
         <item row="3" column="1">
          <widget class="QFrame" name="p15_lykategori">
           <property name="styleSheet">
-           <string notr="true"/>
+           <string notr="true">QLabel { color: #1B3C53; font-weight: bold; margin-bottom: 5px; } QRadioButton { border: 2px solid #456882; border-radius: 5px; margin: 5px; padding: 10px; }</string>
           </property>
           <layout class="QGridLayout" name="layout4_grid">
            <property name="leftMargin">
@@ -386,13 +245,10 @@
              <property name="orientation">
               <enum>Qt::Orientation::Horizontal</enum>
              </property>
-             <property name="sizeType">
-              <enum>QSizePolicy::Policy::Fixed</enum>
-             </property>
              <property name="sizeHint" stdset="0">
               <size>
-               <width>40</width>
-               <height>20</height>
+               <width>0</width>
+               <height>0</height>
               </size>
              </property>
             </spacer>
@@ -403,28 +259,12 @@
               <cursorShape>PointingHandCursor</cursorShape>
              </property>
              <property name="styleSheet">
-              <string notr="true"/>
+              <string notr="true">QPushButton { background-color: #234C6A; border: 1px solid #234C6A; border-radius: 5px; color: white; margin: 10px; padding: 10px 40px 10px 40px; } QPushButton:hover { background-color: #456882 }</string>
              </property>
              <property name="text">
               <string>Simpan</string>
              </property>
             </widget>
-           </item>
-           <item>
-            <spacer name="hspacer_2">
-             <property name="orientation">
-              <enum>Qt::Orientation::Horizontal</enum>
-             </property>
-             <property name="sizeType">
-              <enum>QSizePolicy::Policy::Fixed</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>40</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
            </item>
           </layout>
          </widget>
@@ -432,7 +272,7 @@
         <item row="2" column="1">
          <widget class="QFrame" name="p14_lyinput">
           <property name="styleSheet">
-           <string notr="true"/>
+           <string notr="true">QLabel { color: #1B3C53; font-weight: bold; padding: 10px 0px 0px 0px; } QSpinBox, QComboBox, QDateEdit { padding: 10px; } QDateEdit { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QDateEdit::drop-down { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QDateEdit::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; }</string>
           </property>
           <layout class="QGridLayout" name="layout3_grid" columnstretch="1,1">
            <property name="leftMargin">
@@ -499,7 +339,7 @@
               <cursorShape>PointingHandCursor</cursorShape>
              </property>
              <property name="styleSheet">
-              <string notr="true">QComboBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px;} QComboBox::drop-down { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QComboBox::down-arrow { image: url(assets/caret-down.png); width: 8px; height: 8px; }</string>
+              <string notr="true"/>
              </property>
              <item>
               <property name="text">
@@ -612,8 +452,11 @@
            </item>
            <item row="1" column="0">
             <widget class="QSpinBox" name="p14b_spjumlah">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
              <property name="styleSheet">
-              <string notr="true">QSpinBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QSpinBox::up-button, QSpinBox::down-button { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QSpinBox::up-arrow { image: url(assets/caret-up); width: 8px; height: 8px; } QSpinBox::down-arrow { image: url(assets/caret-down); width: 8px; height: 8px; }</string>
+              <string notr="true"/>
              </property>
              <property name="maximum">
               <number>1000000</number>
@@ -627,7 +470,7 @@
       </widget>
       <widget class="QWidget" name="page_2">
        <property name="styleSheet">
-        <string notr="true">QWidget { color: black; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; }</string>
+        <string notr="true">QWidget { color: #456882; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; }</string>
        </property>
        <layout class="QGridLayout" name="gridLayout_4">
         <property name="leftMargin">
@@ -651,7 +494,7 @@
            </sizepolicy>
           </property>
           <property name="styleSheet">
-           <string notr="true">QFrame#p22_lytransaksi { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QComboBox, QSpinBox, QDateEdit { padding: 10px; } QRadioButton { border: 1px solid hsl(210, 13%, 65%); border-radius: 10px; padding: 10px 10px 10px 10px; }</string>
+           <string notr="true">QFrame#p22_lytransaksi { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QLabel { color: #1B3C53; font-weight: bold; padding-bottom: 5px; } QComboBox, QSpinBox, QDateEdit { padding: 10px; } QRadioButton { border: 2px solid #456882; border-radius: 5px; padding: 10px; } QComboBox { border: 2px solid #456882; border-radius: 5px; }</string>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_3">
            <property name="leftMargin">
@@ -678,8 +521,11 @@
               </item>
               <item>
                <widget class="QComboBox" name="p22ab_cbnama">
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
                 <property name="styleSheet">
-                 <string notr="true">QComboBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px;} QComboBox::drop-down { border: 1px solidhsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QComboBox::down-arrow { image: url(assets/caret-down.png); width: 8px; height: 8px; }</string>
+                 <string notr="true"/>
                 </property>
                </widget>
               </item>
@@ -745,7 +591,7 @@
                </widget>
               </item>
               <item row="0" column="0">
-               <widget class="QLabel" name="p22ca_cajumlah">
+               <widget class="QLabel" name="p22ca_lbljumlah">
                 <property name="styleSheet">
                  <string notr="true"/>
                 </property>
@@ -756,15 +602,21 @@
               </item>
               <item row="1" column="0">
                <widget class="QSpinBox" name="p22cb_spjumlah">
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
                 <property name="styleSheet">
-                 <string notr="true">QSpinBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QSpinBox::up-button, QSpinBox::down-button { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QSpinBox::up-arrow { image: url(assets/caret-up); width: 8px; height: 8px; } QSpinBox::down-arrow { image: url(assets/caret-down); width: 8px; height: 8px; }</string>
+                 <string notr="true"/>
                 </property>
                </widget>
               </item>
               <item row="1" column="1">
                <widget class="QDateEdit" name="p22cd_detanggal">
+                <property name="cursor">
+                 <cursorShape>WhatsThisCursor</cursorShape>
+                </property>
                 <property name="styleSheet">
-                 <string notr="true">QSpinBox, QComboBox, QDateEdit { padding: 10px; } QDateEdit { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QDateEdit::drop-down { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QDateEdit::down-arrow { image: url(assets/caret-down.png); width: 8px; height: 8px; }</string>
+                 <string notr="true"/>
                 </property>
                 <property name="locale">
                  <locale language="Indonesian" country="Indonesia"/>
@@ -797,13 +649,10 @@
                 <property name="orientation">
                  <enum>Qt::Orientation::Horizontal</enum>
                 </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Policy::Fixed</enum>
-                </property>
                 <property name="sizeHint" stdset="0">
                  <size>
-                  <width>60</width>
-                  <height>20</height>
+                  <width>0</width>
+                  <height>0</height>
                  </size>
                 </property>
                </spacer>
@@ -814,28 +663,12 @@
                  <cursorShape>PointingHandCursor</cursorShape>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true"/>
+                 <string notr="true">QPushButton { background-color: #234C6A; border: 1px solid #234C6A; border-radius: 5px; color: white; margin: 10px; padding: 10px 20px 10px 20px; } QPushButton:hover { background-color: #456882 }</string>
                 </property>
                 <property name="text">
                  <string>Proses Transaksi</string>
                 </property>
                </widget>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_2">
-                <property name="orientation">
-                 <enum>Qt::Orientation::Horizontal</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Policy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>60</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
               </item>
              </layout>
             </widget>
@@ -844,12 +677,15 @@
          </widget>
         </item>
         <item row="2" column="0">
-         <widget class="QFrame" name="lyp21_heading">
+         <widget class="QFrame" name="p21_lyheading">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame { background-color: #1B3C53; border-radius: 5px; } QLabel#p21a_head { color: white; font-size: 26px; font-weight: bold; margin: 5px 5px 0px 5px; } QLabel#p21a_headsub { color: white; font-size: 16px; margin: 0px 5px 5px 5px; }</string>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_5">
            <property name="leftMargin">
@@ -873,10 +709,10 @@
               </sizepolicy>
              </property>
              <property name="styleSheet">
-              <string notr="true">QLabel#p21a_head { font-size: 26px; font-weight: bold; font-family: Helvetica, Inter, Sans-serif; }</string>
+              <string notr="true"/>
              </property>
              <property name="text">
-              <string>Transaksi Bahan Makanan Baru</string>
+              <string>Transaksi Bahan Makanan</string>
              </property>
             </widget>
            </item>
@@ -889,7 +725,7 @@
               </sizepolicy>
              </property>
              <property name="styleSheet">
-              <string notr="true">QLabel#p21a_headsub { color: #666; font-size: 16px; }</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>Isi form di bawah untuk mencatat bahan makanan</string>
@@ -919,16 +755,19 @@
       </widget>
       <widget class="QWidget" name="page_3">
        <property name="styleSheet">
-        <string notr="true">QWidget { color: black; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; }</string>
+        <string notr="true">QWidget { color: #456882; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; }</string>
        </property>
        <layout class="QGridLayout" name="gridLayout_8">
         <item row="0" column="0">
          <widget class="QFrame" name="p31_lyheader">
+          <property name="styleSheet">
+           <string notr="true">QFrame { background-color: #1B3C53; border-radius: 5px; } QLabel#p31_head { color: white; font-size: 26px; font-weight: bold; margin: 5px 5px 0px 5px; } QLabel#p31_headsub { color: white; font-size: 16px; margin: 0px 5px 5px 5px; }</string>
+          </property>
           <layout class="QVBoxLayout" name="p31_header_v">
            <item>
             <widget class="QLabel" name="p31_head">
              <property name="styleSheet">
-              <string notr="true">QLabel#p31_head { font-size: 26px; font-weight: bold; padding: 5px 10px 5px 0px; }</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>Laporan Kedaluwarsa</string>
@@ -938,7 +777,7 @@
            <item>
             <widget class="QLabel" name="p31_headsub">
              <property name="styleSheet">
-              <string notr="true">QLabel#p31_headsub { font-size: 16px; color: gray; padding: 5px 10px 5px 0px; }</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>Pantau dan kelola bahan makanan yang akan kedaluwarsa</string>
@@ -999,13 +838,16 @@
            <item row="2" column="0" colspan="4">
             <widget class="QTableView" name="p32h_tbhasil">
              <property name="styleSheet">
-              <string notr="true">QHeaderView { background-color: hsl(210, 13%, 65%); border: 1px solid hsl(210, 13%, 65%);; border-radius: 5px; } QTableView { background-color: hsl(210, 31%, 80%); border: 1px solid hsl(210, 13%, 65%);; border-radius: 5px; }</string>
+              <string notr="true"/>
+             </property>
+             <property name="locale">
+              <locale language="Indonesian" country="Indonesia"/>
              </property>
              <property name="editTriggers">
               <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
              </property>
              <attribute name="horizontalHeaderStretchLastSection">
-              <bool>true</bool>
+              <bool>false</bool>
              </attribute>
              <attribute name="verticalHeaderVisible">
               <bool>false</bool>
@@ -1018,7 +860,7 @@
               <cursorShape>PointingHandCursor</cursorShape>
              </property>
              <property name="styleSheet">
-              <string notr="true">QComboBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; padding: 5px; } QComboBox::drop-down { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QComboBox::down-arrow { image: url(assets/caret-down.png); width: 8px; height: 8px; }</string>
+              <string notr="true"/>
              </property>
              <item>
               <property name="text">
@@ -1076,6 +918,9 @@
            </item>
            <item row="0" column="3">
             <widget class="QCheckBox" name="p32i_chkedit">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
              <property name="styleSheet">
               <string notr="true">QCheckBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; padding: 3px 5px 3px 5px; }</string>
              </property>
@@ -1091,9 +936,168 @@
       </widget>
      </widget>
     </item>
+    <item row="0" column="0">
+     <widget class="QFrame" name="base_sidebar">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#base_sidebar { background-color: #1B3C53; border: 1px solid #1B3C53; border-radius: 5px; } QLabel { background-color: #1B3C53; color: white; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; font-weight: bold; padding: 10px 10px 10px 10px; } QPushButton { background-color: #1B3C53; border-radius: 5px; color: white; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; padding: 10px 10px 10px 10px; margin: 5px; text-align: left; } QPushButton:hover { background-color: #456882 }</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="leftMargin">
+        <number>8</number>
+       </property>
+       <property name="topMargin">
+        <number>8</number>
+       </property>
+       <property name="rightMargin">
+        <number>8</number>
+       </property>
+       <property name="bottomMargin">
+        <number>8</number>
+       </property>
+       <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+        <widget class="QFrame" name="foto_profil">
+         <property name="styleSheet">
+          <string notr="true">QFrame#foto_profil { background-color: #1B3C53; padding: 10px 0px 10px 0px; } QLabel#label_profil { background-color: #1B3C53; margin: 0px 0px 0px 0px; padding: 0px 2px 0px 0px; } QLabel#label_profilnama { background-color: #1B3C53; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 2px; }</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_profil">
+            <property name="maximumSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Qt_Resources.qrc">:/First_Assets/Assets/user_white.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+           <widget class="QLabel" name="label_profilnama">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Profil</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="horizontal_line">
+         <property name="styleSheet">
+          <string notr="true">QLabel#horizontal_line { padding: 0px 10px 0px 10px; }</string>
+         </property>
+         <property name="text">
+          <string>&lt;hr&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="side_input">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Input</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../Qt_Resources.qrc">
+           <normaloff>:/First_Assets/Assets/input_white.png</normaloff>:/First_Assets/Assets/input_white.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="side_transaksi">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Transaksi</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../Qt_Resources.qrc">
+           <normaloff>:/First_Assets/Assets/transaction_white.png</normaloff>:/First_Assets/Assets/transaction_white.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="side_laporan">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Laporan</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../Qt_Resources.qrc">
+           <normaloff>:/First_Assets/Assets/report_white.png</normaloff>:/First_Assets/Assets/report_white.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="vspacer1">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../Qt_Resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

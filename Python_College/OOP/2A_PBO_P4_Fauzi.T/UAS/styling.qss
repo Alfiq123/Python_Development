@@ -1,0 +1,499 @@
+/*
+ * styling - Qt Style Sheet
+ * Created: 12/23/25
+ */
+
+/* Base styling */
+
+/* Add your QSS styles here */
+
+/* === COMBOBOX PAGE I === */
+QComboBox {
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #456882;
+    color: #1B3C53;
+    font-family: Helvetica, Inter, Sans-serif;
+    font-size: 14px;
+    min-height: 30px;
+    padding-right: 40px;
+    padding: 8px 10px;
+}
+
+QComboBox:hover {
+    background-color: #F8F8F8;
+    border: 2px solid #234C6A;
+}
+
+QComboBox:focus {
+    background-color: white;
+    border: 2px solid #234C6A;
+}
+
+QComboBox:disabled {
+    background-color: #E3E3E3;
+    border: 2px solid #E3E3E3;
+    color: #456882;
+}
+
+/* Tombol dropdown */
+QComboBox::drop-down {
+    background-color: #1B3C53;
+    border-bottom-right-radius: 3px;
+    border-left: 2px solid #456882;
+    border-top-right-radius: 3px;
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+}
+
+QComboBox::drop-down:hover {
+    background-color: #234C6A;
+}
+
+QComboBox::drop-down:pressed {
+    background-color: #456882;
+}
+
+/* Arrow icon */
+QComboBox::down-arrow {
+    height: 12px;
+    /* image: url(:/Assets/caretdown_white.png); */
+    width: 12px;
+}
+
+/* Dropdown list */
+QComboBox QAbstractItemView {
+    background-color: white;
+    border: 2px solid #456882;
+    color: #1B3C53;
+    font-family: Helvetica, Inter, Sans-serif;
+    outline: none;
+    padding: 5px;
+    selection-background-color: #234C6A;
+    selection-color: white;
+}
+
+QComboBox QAbstractItemView::item {
+    border-radius: 3px;
+    padding: 8px 10px;
+}
+
+QComboBox QAbstractItemView::item:hover {
+    background-color: #E3E3E3;
+    color: #1B3C53;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background-color: #234C6A;
+    color: white;
+}
+
+
+/* === SPINBOX PAGE I === */
+QSpinBox {
+    background-color: white;
+    border: 2px solid #456882;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-family: Helvetica, Inter, Sans-serif;
+    font-size: 14px;
+    color: #1B3C53;
+    min-height: 30px;
+}
+
+QSpinBox:hover {
+    border: 2px solid #234C6A;
+    background-color: #F8F8F8;
+}
+
+QSpinBox:focus {
+    border: 2px solid #234C6A;
+    background-color: white;
+}
+
+QSpinBox:disabled {
+    background-color: #E3E3E3;
+    color: #456882;
+    border: 2px solid #E3E3E3;
+}
+
+/* Tombol UP */
+QSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 30px;
+    height: 30px;
+    background-color: #1B3C53;
+    border-left: 2px solid #456882;
+    border-top-right-radius: 3px;
+}
+
+QSpinBox::up-button:hover {
+    background-color: #234C6A;
+}
+
+QSpinBox::up-button:pressed {
+    background-color: #456882;
+}
+
+QSpinBox::up-arrow {
+    /* image: url(:/Assets/caretup_white.png); */
+    width: 12px;
+    height: 12px;
+}
+
+/* Tombol DOWN */
+QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    width: 30px;
+    height: 30px;
+    background-color: #1B3C53;
+    border-left: 2px solid #456882;
+    border-bottom-right-radius: 3px;
+}
+
+QSpinBox::down-button:hover {
+    background-color: #234C6A;
+}
+
+QSpinBox::down-button:pressed {
+    background-color: #456882;
+}
+
+QSpinBox::down-arrow {
+    /* image: url(:Assets/caretdown_white.png); */
+    width: 12px;
+    height: 12px;
+}
+
+
+/* === DATE EDIT === */
+QDateEdit {
+    background-color: white;
+    border: 2px solid #456882;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #1B3C53;
+    min-height: 30px;
+    padding-right: 40px;
+}
+
+QDateEdit:hover {
+    border: 2px solid #234C6A;
+    background-color: #F8F8F8;
+}
+
+QDateEdit:focus {
+    border: 2px solid #234C6A;
+    background-color: white;
+}
+
+QDateEdit:disabled {
+    background-color: #E3E3E3;
+    color: #456882;
+    border: 2px solid #E3E3E3;
+}
+
+/* Tombol dropdown calendar */
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+    border-left: 2px solid #456882;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #1B3C53;
+}
+
+QDateEdit::drop-down:hover {
+    background-color: #234C6A;
+}
+
+QDateEdit::drop-down:pressed {
+    background-color: #456882;
+}
+
+QDateEdit::down-arrow {
+    /* image: url(Assets/caretdown_white.png); */
+    width: 12px;
+    height: 12px;
+}
+
+/* Up/Down buttons untuk edit langsung */
+QDateEdit::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 16px;
+    background-color: transparent;
+}
+
+QDateEdit::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    width: 16px;
+    background-color: transparent;
+}
+
+/* === CALENDAR === */
+QCalendarWidget {
+    background-color: white;
+    border: 2px solid #456882;
+    border-radius: 5px;
+}
+
+/* Navigation bar (bulan/tahun) */
+QCalendarWidget QWidget#qt_calendar_navigationbar {
+    background-color: #1B3C53;
+    padding: 5px;
+}
+
+/* Tombol prev/next month */
+QCalendarWidget QToolButton {
+    color: white;
+    background-color: #1B3C53;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 2px;
+}
+
+QCalendarWidget QToolButton:hover {
+    background-color: #234C6A;
+}
+
+QCalendarWidget QToolButton:pressed {
+    background-color: #456882;
+}
+
+/* Menu dropdown bulan/tahun */
+QCalendarWidget QMenu {
+    background-color: white;
+    border: 2px solid #456882;
+    color: #1B3C53;
+}
+
+QCalendarWidget QMenu::item:selected {
+    background-color: #234C6A;
+    color: white;
+}
+
+/* Spin box untuk tahun */
+QCalendarWidget QSpinBox {
+    background-color: white;
+    color: #1B3C53;
+    border: 1px solid #456882;
+    border-radius: 3px;
+    padding: 3px 6px 3px 6px;
+    selection-background-color: #234C6A;
+    selection-color: white;
+}
+
+QCalendarWidget QSpinBox::up-button,
+QCalendarWidget QSpinBox::down-button {
+    background-color: #1B3C53;
+    border: none;
+}
+
+QCalendarWidget QSpinBox::up-button:hover,
+QCalendarWidget QSpinBox::down-button:hover {
+    background-color: #234C6A;
+}
+
+/* Header hari (Sen, Sel, Rab, ...) */
+QCalendarWidget QWidget {
+    alternate-background-color: white;
+}
+
+QCalendarWidget QAbstractItemView:enabled {
+    background-color: white;
+    color: #1B3C53;
+    selection-background-color: #234C6A;
+    selection-color: white;
+}
+
+/* Header nama hari */
+QCalendarWidget QAbstractItemView:enabled QHeaderView::section {
+    background-color: #E3E3E3;
+    color: #1B3C53;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+}
+
+/* Tanggal normal */
+QCalendarWidget QAbstractItemView:enabled {
+    font-size: 13px;
+    gridline-color: #E3E3E3;
+}
+
+/* Tanggal hari ini */
+QCalendarWidget QAbstractItemView:enabled QWidget {
+    background-color: #E3E3E3;
+}
+
+/* Tanggal yang dipilih */
+QCalendarWidget QAbstractItemView:enabled:selected {
+    background-color: #234C6A;
+    color: white;
+    font-weight: bold;
+}
+
+/* Tanggal di-hover */
+QCalendarWidget QAbstractItemView:enabled:hover {
+    background-color: #456882;
+    color: white;
+}
+
+/* Tanggal dari bulan lain (grayed out) */
+QCalendarWidget QAbstractItemView:disabled {
+    color: #456882;
+}
+
+
+/* === TABLE VIEW === */
+QTableView {
+    background-color: white;
+    alternate-background-color: #E3E3E3;
+    border: 2px solid #456882;
+    border-radius: 5px;
+    gridline-color: #E3E3E3;
+    selection-background-color: #234C6A;
+    selection-color: white;
+    color: #1B3C53;
+    font-size: 13px;
+}
+
+QTableView::item {
+    padding: 8px;
+    border: none;
+}
+
+QTableView::item:hover {
+    background-color: #456882;
+    color: white;
+}
+
+QTableView::item:selected {
+    background-color: #234C6A;
+    color: white;
+}
+
+QTableView::item:selected:hover {
+    background-color: #1B3C53;
+}
+
+/* Header horizontal (kolom) */
+QHeaderView::section {
+    background-color: #1B3C53;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-right: 1px solid #456882;
+    border-bottom: 2px solid #456882;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+QHeaderView::section:hover {
+    background-color: #234C6A;
+}
+
+QHeaderView::section:pressed {
+    background-color: #456882;
+}
+
+/* Header pertama (kiri atas) */
+QHeaderView::section:first {
+    border-top-left-radius: 3px;
+}
+
+QHeaderView::section:last {
+    border-right: none;
+    border-top-right-radius: 3px;
+}
+
+/* Vertical header (row numbers) */
+QHeaderView::section:vertical {
+    background-color: #E3E3E3;
+    color: #1B3C53;
+    border-right: 2px solid #456882;
+    border-bottom: 1px solid #456882;
+}
+
+/* Scrollbar vertical */
+QTableView QScrollBar:vertical {
+    background-color: #E3E3E3;
+    width: 14px;
+    border: none;
+    border-radius: 7px;
+    margin: 0px;
+}
+
+QTableView QScrollBar::handle:vertical {
+    background-color: #456882;
+    border-radius: 7px;
+    min-height: 30px;
+}
+
+QTableView QScrollBar::handle:vertical:hover {
+    background-color: #234C6A;
+}
+
+QTableView QScrollBar::handle:vertical:pressed {
+    background-color: #1B3C53;
+}
+
+QTableView QScrollBar::add-line:vertical,
+QTableView QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QTableView QScrollBar::add-page:vertical,
+QTableView QScrollBar::sub-page:vertical {
+    background-color: #E3E3E3;
+}
+
+/* Scrollbar horizontal */
+QTableView QScrollBar:horizontal {
+    background-color: #E3E3E3;
+    height: 14px;
+    border: none;
+    border-radius: 7px;
+    margin: 0px;
+}
+
+QTableView QScrollBar::handle:horizontal {
+    background-color: #456882;
+    border-radius: 7px;
+    min-width: 30px;
+}
+
+QTableView QScrollBar::handle:horizontal:hover {
+    background-color: #234C6A;
+}
+
+QTableView QScrollBar::handle:horizontal:pressed {
+    background-color: #1B3C53;
+}
+
+QTableView QScrollBar::add-line:horizontal,
+QTableView QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+QTableView QScrollBar::add-page:horizontal,
+QTableView QScrollBar::sub-page:horizontal {
+    background-color: #E3E3E3;
+}
+
+/* Corner button (pojok kiri atas) */
+QTableView QTableCornerButton::section {
+    background-color: #1B3C53;
+    border: none;
+    border-right: 2px solid #456882;
+    border-bottom: 2px solid #456882;
+    border-top-left-radius: 3px;
+}

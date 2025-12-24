@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'MainWindow_Page_BackupnuYoNn.ui'
+## Form generated from reading UI file 'MainWindow_Page.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -21,28 +21,98 @@ from PySide6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox, QComb
     QPushButton, QRadioButton, QSizePolicy, QSpacerItem,
     QSpinBox, QStackedWidget, QTableView, QVBoxLayout,
     QWidget)
-import Qt_Resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(637, 723)
+        MainWindow.resize(603, 522)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.centralwidget.setStyleSheet(u"background-color: #E3E3E3;")
+        self.centralwidget.setStyleSheet(u"background-color: hsl(210, 40%, 98%);")
         self.gridLayout = QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName(u"gridLayout")
+        self.base_sidebar = QFrame(self.centralwidget)
+        self.base_sidebar.setObjectName(u"base_sidebar")
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.base_sidebar.sizePolicy().hasHeightForWidth())
+        self.base_sidebar.setSizePolicy(sizePolicy)
+        self.base_sidebar.setStyleSheet(u"")
+        self.verticalLayout = QVBoxLayout(self.base_sidebar)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(8, 8, 8, 8)
+        self.foto_profil = QFrame(self.base_sidebar)
+        self.foto_profil.setObjectName(u"foto_profil")
+        self.horizontalLayout = QHBoxLayout(self.foto_profil)
+        self.horizontalLayout.setSpacing(0)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.label_profil = QLabel(self.foto_profil)
+        self.label_profil.setObjectName(u"label_profil")
+        self.label_profil.setMaximumSize(QSize(32, 32))
+        self.label_profil.setStyleSheet(u"")
+        self.label_profil.setPixmap(QPixmap(u"../Assets/user_black.png"))
+        self.label_profil.setScaledContents(True)
+
+        self.horizontalLayout.addWidget(self.label_profil)
+
+        self.label_profilnama = QLabel(self.foto_profil)
+        self.label_profilnama.setObjectName(u"label_profilnama")
+        self.label_profilnama.setStyleSheet(u"")
+
+        self.horizontalLayout.addWidget(self.label_profilnama, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
+
+
+        self.verticalLayout.addWidget(self.foto_profil, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
+
+        self.side_input = QPushButton(self.base_sidebar)
+        self.side_input.setObjectName(u"side_input")
+        self.side_input.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.side_input.setStyleSheet(u"")
+        icon = QIcon()
+        icon.addFile(u"Assets/input_black.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.side_input.setIcon(icon)
+
+        self.verticalLayout.addWidget(self.side_input)
+
+        self.side_transaksi = QPushButton(self.base_sidebar)
+        self.side_transaksi.setObjectName(u"side_transaksi")
+        self.side_transaksi.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.side_transaksi.setStyleSheet(u"")
+        icon1 = QIcon()
+        icon1.addFile(u"Assets/transaction_black.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.side_transaksi.setIcon(icon1)
+
+        self.verticalLayout.addWidget(self.side_transaksi)
+
+        self.side_laporan = QPushButton(self.base_sidebar)
+        self.side_laporan.setObjectName(u"side_laporan")
+        self.side_laporan.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.side_laporan.setStyleSheet(u"")
+        icon2 = QIcon()
+        icon2.addFile(u"Assets/report_black.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.side_laporan.setIcon(icon2)
+
+        self.verticalLayout.addWidget(self.side_laporan)
+
+        self.vspacer1 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout.addItem(self.vspacer1)
+
+
+        self.gridLayout.addWidget(self.base_sidebar, 0, 0, 1, 1)
+
         self.pages = QStackedWidget(self.centralwidget)
         self.pages.setObjectName(u"pages")
         self.page_1 = QWidget()
         self.page_1.setObjectName(u"page_1")
-        self.page_1.setStyleSheet(u"QWidget { color: #375368; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; }")
+        self.page_1.setStyleSheet(u"")
         self.gridLayout_3 = QGridLayout(self.page_1)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
         self.p12_lyheading = QFrame(self.page_1)
         self.p12_lyheading.setObjectName(u"p12_lyheading")
-        self.p12_lyheading.setStyleSheet(u"QFrame { background-color: #1B3C53; border-radius: 5px; } QLabel#lblhead { color: white; font-size: 26px; font-weight: bold; margin: 5px 5px 0px 5px; } QLabel#lblheadsub { color: white; font-size: 16px; margin: 0px 5px 5px 5px; }")
         self.layout1_grid = QGridLayout(self.p12_lyheading)
         self.layout1_grid.setObjectName(u"layout1_grid")
         self.layout1_grid.setContentsMargins(10, 10, 10, 10)
@@ -63,7 +133,7 @@ class Ui_MainWindow(object):
 
         self.p13_lynama = QFrame(self.page_1)
         self.p13_lynama.setObjectName(u"p13_lynama")
-        self.p13_lynama.setStyleSheet(u"QLabel { color: #1B3C53; font-weight: bold; padding-bottom: 5px; } QLineEdit { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; padding: 10px; }")
+        self.p13_lynama.setStyleSheet(u"")
         self.layout2_vertical = QVBoxLayout(self.p13_lynama)
         self.layout2_vertical.setObjectName(u"layout2_vertical")
         self.layout2_vertical.setContentsMargins(10, 10, 10, 10)
@@ -84,7 +154,7 @@ class Ui_MainWindow(object):
 
         self.p15_lykategori = QFrame(self.page_1)
         self.p15_lykategori.setObjectName(u"p15_lykategori")
-        self.p15_lykategori.setStyleSheet(u"QLabel { color: #1B3C53; font-weight: bold; margin-bottom: 5px; } QRadioButton { border: 2px solid #456882; border-radius: 5px; margin: 5px; padding: 10px; }")
+        self.p15_lykategori.setStyleSheet(u"QLabel { margin-bottom: 5px; } QRadioButton { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; margin: 5px; padding: 10px; }")
         self.layout4_grid = QGridLayout(self.p15_lykategori)
         self.layout4_grid.setObjectName(u"layout4_grid")
         self.layout4_grid.setContentsMargins(10, 10, 10, 10)
@@ -146,23 +216,27 @@ class Ui_MainWindow(object):
         self.layout5_horizontal = QHBoxLayout(self.p16_tombol)
         self.layout5_horizontal.setObjectName(u"layout5_horizontal")
         self.layout5_horizontal.setContentsMargins(10, 10, 10, 10)
-        self.hspacer_1 = QSpacerItem(0, 0, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+        self.hspacer_1 = QSpacerItem(40, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.layout5_horizontal.addItem(self.hspacer_1)
 
         self.btnsimpan = QPushButton(self.p16_tombol)
         self.btnsimpan.setObjectName(u"btnsimpan")
         self.btnsimpan.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.btnsimpan.setStyleSheet(u"QPushButton { background-color: #234C6A; border: 1px solid #234C6A; border-radius: 5px; color: white; margin: 10px; padding: 10px 40px 10px 40px; } QPushButton:hover { background-color: #456882 }")
+        self.btnsimpan.setStyleSheet(u"")
 
         self.layout5_horizontal.addWidget(self.btnsimpan)
+
+        self.hspacer_2 = QSpacerItem(40, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
+
+        self.layout5_horizontal.addItem(self.hspacer_2)
 
 
         self.gridLayout_3.addWidget(self.p16_tombol, 4, 1, 1, 1)
 
         self.p14_lyinput = QFrame(self.page_1)
         self.p14_lyinput.setObjectName(u"p14_lyinput")
-        self.p14_lyinput.setStyleSheet(u"QLabel { color: #1B3C53; font-weight: bold; padding: 10px 0px 0px 0px; } QSpinBox, QComboBox, QDateEdit { padding: 10px; } QDateEdit { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QDateEdit::drop-down { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QDateEdit::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; }")
+        self.p14_lyinput.setStyleSheet(u"")
         self.layout3_grid = QGridLayout(self.p14_lyinput)
         self.layout3_grid.setObjectName(u"layout3_grid")
         self.layout3_grid.setHorizontalSpacing(10)
@@ -200,7 +274,7 @@ class Ui_MainWindow(object):
         self.p14d_cbsatuan.addItem("")
         self.p14d_cbsatuan.setObjectName(u"p14d_cbsatuan")
         self.p14d_cbsatuan.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.p14d_cbsatuan.setStyleSheet(u"")
+        self.p14d_cbsatuan.setStyleSheet(u"QComboBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px;} QComboBox::drop-down { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QComboBox::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; }")
 
         self.layout3_grid.addWidget(self.p14d_cbsatuan, 1, 1, 1, 1)
 
@@ -230,8 +304,7 @@ class Ui_MainWindow(object):
 
         self.p14b_spjumlah = QSpinBox(self.p14_lyinput)
         self.p14b_spjumlah.setObjectName(u"p14b_spjumlah")
-        self.p14b_spjumlah.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.p14b_spjumlah.setStyleSheet(u"")
+        self.p14b_spjumlah.setStyleSheet(u"QSpinBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QSpinBox::up-button, QSpinBox::down-button { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QSpinBox::up-arrow { image: url(Assets/caret-up); width: 8px; height: 8px; } QSpinBox::down-arrow { image: url(Assets/caret-down); width: 8px; height: 8px; }")
         self.p14b_spjumlah.setMaximum(1000000)
 
         self.layout3_grid.addWidget(self.p14b_spjumlah, 1, 0, 1, 1)
@@ -244,18 +317,18 @@ class Ui_MainWindow(object):
         self.pages.addWidget(self.page_1)
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
-        self.page_2.setStyleSheet(u"QWidget { color: #456882; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; }")
+        self.page_2.setStyleSheet(u"QWidget { color: black; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; }")
         self.gridLayout_4 = QGridLayout(self.page_2)
         self.gridLayout_4.setObjectName(u"gridLayout_4")
         self.gridLayout_4.setContentsMargins(10, 10, 10, 10)
         self.p22_lytransaksi = QFrame(self.page_2)
         self.p22_lytransaksi.setObjectName(u"p22_lytransaksi")
-        sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.p22_lytransaksi.sizePolicy().hasHeightForWidth())
-        self.p22_lytransaksi.setSizePolicy(sizePolicy)
-        self.p22_lytransaksi.setStyleSheet(u"QFrame#p22_lytransaksi { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QLabel { color: #1B3C53; font-weight: bold; padding-bottom: 5px; } QComboBox, QSpinBox, QDateEdit { padding: 10px; } QRadioButton { border: 2px solid #456882; border-radius: 5px; padding: 10px; } QComboBox { border: 2px solid #456882; border-radius: 5px; }")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.p22_lytransaksi.sizePolicy().hasHeightForWidth())
+        self.p22_lytransaksi.setSizePolicy(sizePolicy1)
+        self.p22_lytransaksi.setStyleSheet(u"QFrame#p22_lytransaksi { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QComboBox, QSpinBox, QDateEdit { padding: 10px; } QRadioButton { border: 1px solid hsl(210, 13%, 65%); border-radius: 10px; padding: 10px 10px 10px 10px; }")
         self.verticalLayout_3 = QVBoxLayout(self.p22_lytransaksi)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(10, 10, 10, 10)
@@ -270,8 +343,7 @@ class Ui_MainWindow(object):
 
         self.p22ab_cbnama = QComboBox(self.p22a_lynama)
         self.p22ab_cbnama.setObjectName(u"p22ab_cbnama")
-        self.p22ab_cbnama.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.p22ab_cbnama.setStyleSheet(u"")
+        self.p22ab_cbnama.setStyleSheet(u"QComboBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px;} QComboBox::drop-down { border: 1px solidhsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QComboBox::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; }")
 
         self.lyp22a_nama.addWidget(self.p22ab_cbnama)
 
@@ -324,15 +396,13 @@ class Ui_MainWindow(object):
 
         self.p22cb_spjumlah = QSpinBox(self.p22c_lynominal)
         self.p22cb_spjumlah.setObjectName(u"p22cb_spjumlah")
-        self.p22cb_spjumlah.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.p22cb_spjumlah.setStyleSheet(u"")
+        self.p22cb_spjumlah.setStyleSheet(u"QSpinBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QSpinBox::up-button, QSpinBox::down-button { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QSpinBox::up-arrow { image: url(Assets/caret-up); width: 8px; height: 8px; } QSpinBox::down-arrow { image: url(Assets/caret-down); width: 8px; height: 8px; }")
 
         self.gridLayout_15.addWidget(self.p22cb_spjumlah, 1, 0, 1, 1)
 
         self.p22cd_detanggal = QDateEdit(self.p22c_lynominal)
         self.p22cd_detanggal.setObjectName(u"p22cd_detanggal")
-        self.p22cd_detanggal.setCursor(QCursor(Qt.CursorShape.WhatsThisCursor))
-        self.p22cd_detanggal.setStyleSheet(u"")
+        self.p22cd_detanggal.setStyleSheet(u"QSpinBox, QComboBox, QDateEdit { padding: 10px; } QDateEdit { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; } QDateEdit::drop-down { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QDateEdit::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; }")
         self.p22cd_detanggal.setLocale(QLocale(QLocale.Indonesian, QLocale.Indonesia))
         self.p22cd_detanggal.setReadOnly(True)
         self.p22cd_detanggal.setCalendarPopup(True)
@@ -350,16 +420,20 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5 = QHBoxLayout(self.p22d_lytombol)
         self.horizontalLayout_5.setSpacing(12)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
-        self.horizontalSpacer = QSpacerItem(0, 0, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+        self.horizontalSpacer = QSpacerItem(60, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.horizontalLayout_5.addItem(self.horizontalSpacer)
 
         self.p22db_btnproses = QPushButton(self.p22d_lytombol)
         self.p22db_btnproses.setObjectName(u"p22db_btnproses")
         self.p22db_btnproses.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.p22db_btnproses.setStyleSheet(u"QPushButton { background-color: #234C6A; border: 1px solid #234C6A; border-radius: 5px; color: white; margin: 10px; padding: 10px 20px 10px 20px; } QPushButton:hover { background-color: #456882 }")
+        self.p22db_btnproses.setStyleSheet(u"")
 
         self.horizontalLayout_5.addWidget(self.p22db_btnproses)
+
+        self.horizontalSpacer_2 = QSpacerItem(60, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer_2)
 
 
         self.verticalLayout_3.addWidget(self.p22d_lytombol)
@@ -367,38 +441,37 @@ class Ui_MainWindow(object):
 
         self.gridLayout_4.addWidget(self.p22_lytransaksi, 3, 0, 1, 1)
 
-        self.p21_lyheading = QFrame(self.page_2)
-        self.p21_lyheading.setObjectName(u"p21_lyheading")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
-        sizePolicy1.setHorizontalStretch(0)
-        sizePolicy1.setVerticalStretch(0)
-        sizePolicy1.setHeightForWidth(self.p21_lyheading.sizePolicy().hasHeightForWidth())
-        self.p21_lyheading.setSizePolicy(sizePolicy1)
-        self.p21_lyheading.setStyleSheet(u"QFrame { background-color: #1B3C53; border-radius: 5px; } QLabel#p21a_head { color: white; font-size: 26px; font-weight: bold; margin: 5px 5px 0px 5px; } QLabel#p21a_headsub { color: white; font-size: 16px; margin: 0px 5px 5px 5px; }")
-        self.verticalLayout_5 = QVBoxLayout(self.p21_lyheading)
-        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
-        self.verticalLayout_5.setContentsMargins(10, 10, 10, 10)
-        self.p21a_head = QLabel(self.p21_lyheading)
-        self.p21a_head.setObjectName(u"p21a_head")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
+        self.lyp21_heading = QFrame(self.page_2)
+        self.lyp21_heading.setObjectName(u"lyp21_heading")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
         sizePolicy2.setHorizontalStretch(0)
         sizePolicy2.setVerticalStretch(0)
-        sizePolicy2.setHeightForWidth(self.p21a_head.sizePolicy().hasHeightForWidth())
-        self.p21a_head.setSizePolicy(sizePolicy2)
-        self.p21a_head.setStyleSheet(u"")
+        sizePolicy2.setHeightForWidth(self.lyp21_heading.sizePolicy().hasHeightForWidth())
+        self.lyp21_heading.setSizePolicy(sizePolicy2)
+        self.verticalLayout_5 = QVBoxLayout(self.lyp21_heading)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.verticalLayout_5.setContentsMargins(10, 10, 10, 10)
+        self.p21a_head = QLabel(self.lyp21_heading)
+        self.p21a_head.setObjectName(u"p21a_head")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.p21a_head.sizePolicy().hasHeightForWidth())
+        self.p21a_head.setSizePolicy(sizePolicy3)
+        self.p21a_head.setStyleSheet(u"QLabel#p21a_head { font-size: 26px; font-weight: bold; font-family: Helvetica, Inter, Sans-serif; }")
 
         self.verticalLayout_5.addWidget(self.p21a_head)
 
-        self.p21a_headsub = QLabel(self.p21_lyheading)
+        self.p21a_headsub = QLabel(self.lyp21_heading)
         self.p21a_headsub.setObjectName(u"p21a_headsub")
-        sizePolicy2.setHeightForWidth(self.p21a_headsub.sizePolicy().hasHeightForWidth())
-        self.p21a_headsub.setSizePolicy(sizePolicy2)
-        self.p21a_headsub.setStyleSheet(u"")
+        sizePolicy3.setHeightForWidth(self.p21a_headsub.sizePolicy().hasHeightForWidth())
+        self.p21a_headsub.setSizePolicy(sizePolicy3)
+        self.p21a_headsub.setStyleSheet(u"QLabel#p21a_headsub { color: #666; font-size: 16px; }")
 
         self.verticalLayout_5.addWidget(self.p21a_headsub)
 
 
-        self.gridLayout_4.addWidget(self.p21_lyheading, 2, 0, 1, 1)
+        self.gridLayout_4.addWidget(self.lyp21_heading, 2, 0, 1, 1)
 
         self.p2_vspacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
@@ -407,23 +480,22 @@ class Ui_MainWindow(object):
         self.pages.addWidget(self.page_2)
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
-        self.page_3.setStyleSheet(u"QWidget { color: #456882; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; }")
+        self.page_3.setStyleSheet(u"QWidget { color: black; font-family: Helvetica, Inter, sans-serif; font-size: 12pt; }")
         self.gridLayout_8 = QGridLayout(self.page_3)
         self.gridLayout_8.setObjectName(u"gridLayout_8")
         self.p31_lyheader = QFrame(self.page_3)
         self.p31_lyheader.setObjectName(u"p31_lyheader")
-        self.p31_lyheader.setStyleSheet(u"QFrame { background-color: #1B3C53; border-radius: 5px; } QLabel#p31_head { color: white; font-size: 26px; font-weight: bold; margin: 5px 5px 0px 5px; } QLabel#p31_headsub { color: white; font-size: 16px; margin: 0px 5px 5px 5px; }")
         self.p31_header_v = QVBoxLayout(self.p31_lyheader)
         self.p31_header_v.setObjectName(u"p31_header_v")
         self.p31_head = QLabel(self.p31_lyheader)
         self.p31_head.setObjectName(u"p31_head")
-        self.p31_head.setStyleSheet(u"")
+        self.p31_head.setStyleSheet(u"QLabel#p31_head { font-size: 26px; font-weight: bold; padding: 5px 10px 5px 0px; }")
 
         self.p31_header_v.addWidget(self.p31_head)
 
         self.p31_headsub = QLabel(self.p31_lyheader)
         self.p31_headsub.setObjectName(u"p31_headsub")
-        self.p31_headsub.setStyleSheet(u"")
+        self.p31_headsub.setStyleSheet(u"QLabel#p31_headsub { font-size: 16px; color: gray; padding: 5px 10px 5px 0px; }")
 
         self.p31_header_v.addWidget(self.p31_headsub)
 
@@ -456,10 +528,9 @@ class Ui_MainWindow(object):
 
         self.p32h_tbhasil = QTableView(self.p32_lyinfo)
         self.p32h_tbhasil.setObjectName(u"p32h_tbhasil")
-        self.p32h_tbhasil.setStyleSheet(u"")
-        self.p32h_tbhasil.setLocale(QLocale(QLocale.Indonesian, QLocale.Indonesia))
+        self.p32h_tbhasil.setStyleSheet(u"QHeaderView { background-color: hsl(210, 13%, 65%); border: 1px solid hsl(210, 13%, 65%);; border-radius: 5px; } QTableView { background-color: hsl(210, 31%, 80%); border: 1px solid hsl(210, 13%, 65%);; border-radius: 5px; }")
         self.p32h_tbhasil.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
-        self.p32h_tbhasil.horizontalHeader().setStretchLastSection(False)
+        self.p32h_tbhasil.horizontalHeader().setStretchLastSection(True)
         self.p32h_tbhasil.verticalHeader().setVisible(False)
 
         self.p32_info_g.addWidget(self.p32h_tbhasil, 2, 0, 1, 4)
@@ -474,7 +545,7 @@ class Ui_MainWindow(object):
         self.p32b_cbkategori.addItem("")
         self.p32b_cbkategori.setObjectName(u"p32b_cbkategori")
         self.p32b_cbkategori.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.p32b_cbkategori.setStyleSheet(u"")
+        self.p32b_cbkategori.setStyleSheet(u"QComboBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; padding: 5px; } QComboBox::drop-down { border: 1px solid hsl(210, 13%, 65%); border-radius: 0px 5px 5px 0px; } QComboBox::down-arrow { image: url(Assets/caret-down.png); width: 8px; height: 8px; }")
 
         self.p32_info_g.addWidget(self.p32b_cbkategori, 1, 0, 1, 1)
 
@@ -491,7 +562,6 @@ class Ui_MainWindow(object):
 
         self.p32i_chkedit = QCheckBox(self.p32_lyinfo)
         self.p32i_chkedit.setObjectName(u"p32i_chkedit")
-        self.p32i_chkedit.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.p32i_chkedit.setStyleSheet(u"QCheckBox { border: 1px solid hsl(210, 13%, 65%); border-radius: 5px; padding: 3px 5px 3px 5px; }")
 
         self.p32_info_g.addWidget(self.p32i_chkedit, 0, 3, 1, 1)
@@ -502,85 +572,6 @@ class Ui_MainWindow(object):
         self.pages.addWidget(self.page_3)
 
         self.gridLayout.addWidget(self.pages, 0, 1, 1, 1)
-
-        self.base_sidebar = QFrame(self.centralwidget)
-        self.base_sidebar.setObjectName(u"base_sidebar")
-        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
-        sizePolicy3.setHorizontalStretch(0)
-        sizePolicy3.setVerticalStretch(0)
-        sizePolicy3.setHeightForWidth(self.base_sidebar.sizePolicy().hasHeightForWidth())
-        self.base_sidebar.setSizePolicy(sizePolicy3)
-        self.base_sidebar.setStyleSheet(u"QFrame#base_sidebar { background-color: #1B3C53; border: 1px solid #1B3C53; border-radius: 5px; } QLabel { background-color: #1B3C53; color: white; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; font-weight: bold; padding: 10px 10px 10px 10px; } QPushButton { background-color: #1B3C53; border-radius: 5px; color: white; font-family: Helvetica, Inter, Sans-serif; font-size: 12pt; padding: 10px 10px 10px 10px; margin: 5px; text-align: left; } QPushButton:hover { background-color: #456882 }")
-        self.verticalLayout = QVBoxLayout(self.base_sidebar)
-        self.verticalLayout.setObjectName(u"verticalLayout")
-        self.verticalLayout.setContentsMargins(8, 8, 8, 8)
-        self.foto_profil = QFrame(self.base_sidebar)
-        self.foto_profil.setObjectName(u"foto_profil")
-        self.foto_profil.setStyleSheet(u"QFrame#foto_profil { background-color: #1B3C53; padding: 10px 0px 10px 0px; } QLabel#label_profil { background-color: #1B3C53; margin: 0px 0px 0px 0px; padding: 0px 2px 0px 0px; } QLabel#label_profilnama { background-color: #1B3C53; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 2px; }")
-        self.horizontalLayout = QHBoxLayout(self.foto_profil)
-        self.horizontalLayout.setSpacing(0)
-        self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
-        self.label_profil = QLabel(self.foto_profil)
-        self.label_profil.setObjectName(u"label_profil")
-        self.label_profil.setMaximumSize(QSize(32, 32))
-        self.label_profil.setStyleSheet(u"")
-        self.label_profil.setPixmap(QPixmap(u":/First_Assets/Assets/user_white.png"))
-        self.label_profil.setScaledContents(True)
-
-        self.horizontalLayout.addWidget(self.label_profil)
-
-        self.label_profilnama = QLabel(self.foto_profil)
-        self.label_profilnama.setObjectName(u"label_profilnama")
-        self.label_profilnama.setStyleSheet(u"")
-
-        self.horizontalLayout.addWidget(self.label_profilnama, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
-
-
-        self.verticalLayout.addWidget(self.foto_profil, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
-
-        self.horizontal_line = QLabel(self.base_sidebar)
-        self.horizontal_line.setObjectName(u"horizontal_line")
-        self.horizontal_line.setStyleSheet(u"QLabel#horizontal_line { padding: 0px 10px 0px 10px; }")
-
-        self.verticalLayout.addWidget(self.horizontal_line)
-
-        self.side_input = QPushButton(self.base_sidebar)
-        self.side_input.setObjectName(u"side_input")
-        self.side_input.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.side_input.setStyleSheet(u"")
-        icon = QIcon()
-        icon.addFile(u":/First_Assets/Assets/input_white.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.side_input.setIcon(icon)
-
-        self.verticalLayout.addWidget(self.side_input)
-
-        self.side_transaksi = QPushButton(self.base_sidebar)
-        self.side_transaksi.setObjectName(u"side_transaksi")
-        self.side_transaksi.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.side_transaksi.setStyleSheet(u"")
-        icon1 = QIcon()
-        icon1.addFile(u":/First_Assets/Assets/transaction_white.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.side_transaksi.setIcon(icon1)
-
-        self.verticalLayout.addWidget(self.side_transaksi)
-
-        self.side_laporan = QPushButton(self.base_sidebar)
-        self.side_laporan.setObjectName(u"side_laporan")
-        self.side_laporan.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.side_laporan.setStyleSheet(u"")
-        icon2 = QIcon()
-        icon2.addFile(u":/First_Assets/Assets/report_white.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.side_laporan.setIcon(icon2)
-
-        self.verticalLayout.addWidget(self.side_laporan)
-
-        self.vspacer1 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
-
-        self.verticalLayout.addItem(self.vspacer1)
-
-
-        self.gridLayout.addWidget(self.base_sidebar, 0, 0, 1, 1)
 
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -594,6 +585,11 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.label_profil.setText("")
+        self.label_profilnama.setText(QCoreApplication.translate("MainWindow", u"Profil", None))
+        self.side_input.setText(QCoreApplication.translate("MainWindow", u"Input", None))
+        self.side_transaksi.setText(QCoreApplication.translate("MainWindow", u"Transaksi", None))
+        self.side_laporan.setText(QCoreApplication.translate("MainWindow", u"Laporan", None))
         self.lblheadsub.setText(QCoreApplication.translate("MainWindow", u"Tambahkan item baru untuk memantau tanggal kedaluarsa", None))
         self.lblhead.setText(QCoreApplication.translate("MainWindow", u"Input Bahan Makanan", None))
         self.p13a_lblnama.setText(QCoreApplication.translate("MainWindow", u"Nama Bahan Makanan", None))
@@ -626,7 +622,7 @@ class Ui_MainWindow(object):
         self.p22ca_cajumlah.setText(QCoreApplication.translate("MainWindow", u"Jumlah Transaksi", None))
         self.p22cd_detanggal.setDisplayFormat(QCoreApplication.translate("MainWindow", u"yyyy MMMM dd", None))
         self.p22db_btnproses.setText(QCoreApplication.translate("MainWindow", u"Proses Transaksi", None))
-        self.p21a_head.setText(QCoreApplication.translate("MainWindow", u"Transaksi Bahan Makanan", None))
+        self.p21a_head.setText(QCoreApplication.translate("MainWindow", u"Transaksi Bahan Makanan Baru", None))
         self.p21a_headsub.setText(QCoreApplication.translate("MainWindow", u"Isi form di bawah untuk mencatat bahan makanan", None))
         self.p31_head.setText(QCoreApplication.translate("MainWindow", u"Laporan Kedaluwarsa", None))
         self.p31_headsub.setText(QCoreApplication.translate("MainWindow", u"Pantau dan kelola bahan makanan yang akan kedaluwarsa", None))
@@ -644,11 +640,5 @@ class Ui_MainWindow(object):
         self.p32e_rbminggu.setText(QCoreApplication.translate("MainWindow", u"Minggu Ini", None))
         self.p32d_lblkedaluwarsa.setText(QCoreApplication.translate("MainWindow", u"Tanggal Kedaluwarsa", None))
         self.p32i_chkedit.setText(QCoreApplication.translate("MainWindow", u"Edit Mode", None))
-        self.label_profil.setText("")
-        self.label_profilnama.setText(QCoreApplication.translate("MainWindow", u"Profil", None))
-        self.horizontal_line.setText(QCoreApplication.translate("MainWindow", u"<hr>", None))
-        self.side_input.setText(QCoreApplication.translate("MainWindow", u"Input", None))
-        self.side_transaksi.setText(QCoreApplication.translate("MainWindow", u"Transaksi", None))
-        self.side_laporan.setText(QCoreApplication.translate("MainWindow", u"Laporan", None))
     # retranslateUi
 
